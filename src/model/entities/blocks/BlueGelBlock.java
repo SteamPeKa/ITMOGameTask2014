@@ -1,9 +1,9 @@
-package  model.entities.blocks;
+package model.entities.blocks;
 
 import data.Constants;
-import  model.ScoreCounter;
-import  model.EntityType;
-import  model.entities.doodle.Doodle;
+import model.ScoreCounter;
+import model.EntityType;
+import model.entities.doodle.Doodle;
 
 /**
  * Created with IntelliJ IDEA.
@@ -41,6 +41,16 @@ public class BlueGelBlock implements Block {
     @Override
     public EntityType getType() {
         return EntityType.BLUE_GEL_BLOCK;
+    }
+
+    @Override
+    public int getHalfWidth() {
+        return halfWidth;
+    }
+
+    @Override
+    public int getCentreCoordinate() {
+        return centreX;
     }
 
     @Override

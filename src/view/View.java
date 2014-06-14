@@ -6,6 +6,9 @@ import model.Entity;
 import model.EntityType;
 import model.GameModel;
 import model.ScoreCounter;
+import view.drawing_tactics.ColoredRectangleTactic;
+import view.drawing_tactics.DoodleTactic;
+import view.drawing_tactics.DrawingTactic;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -34,9 +37,7 @@ public class View extends JLabel implements Publisher.Subscriber {
 
     private final GameModel model;
 
-    private int dh = 0;
-
-    private final Map<EntityType, Color> colorMap = new EnumMap<>(EntityType.class);
+    private final Map<EntityType, DrawingTactic> colorMap = new EnumMap<>(EntityType.class);
 
     public boolean flag = false;
 
@@ -46,10 +47,10 @@ public class View extends JLabel implements Publisher.Subscriber {
         this.controller = controller;
         this.model = model;
         model.addSubscriber(this);
-        colorMap.put(EntityType.DOODLE, Color.RED);
-        colorMap.put(EntityType.STANDARD_BLOCK, Color.GREEN);
-        colorMap.put(EntityType.BLUE_GEL_BLOCK, Color.BLUE);
-        colorMap.put(EntityType.ROCKET_BLOCK, Color.ORANGE);
+        colorMap.put(EntityType.DOODLE, new DoodleTactic());
+        colorMap.put(EntityType.STANDARD_BLOCK, new ColoredRectangleTactic(Color.GREEN));
+        colorMap.put(EntityType.BLUE_GEL_BLOCK, new ColoredRectangleTactic(Color.BLUE));
+        colorMap.put(EntityType.ROCKET_BLOCK, new ColoredRectangleTactic(Color.ORANGE));
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         try {
             backGround = ImageIO.read(new File(
@@ -61,23 +62,23 @@ public class View extends JLabel implements Publisher.Subscriber {
         this.setBorder(BorderFactory.createLineBorder(Color.black));
         addComponentListener(new ComponentListener() {
             @Override
-            public void componentResized(ComponentEvent e) {
+            public void componentResized(final ComponentEvent e) {
                 xMult = (double) (getWidth()) / model.getFieldWidth();
                 yMult = (double) (getHeight()) / model.getFieldHeight();
             }
 
             @Override
-            public void componentMoved(ComponentEvent e) {
+            public void componentMoved(final ComponentEvent e) {
 
             }
 
             @Override
-            public void componentShown(ComponentEvent e) {
+            public void componentShown(final ComponentEvent e) {
 
             }
 
             @Override
-            public void componentHidden(ComponentEvent e) {
+            public void componentHidden(final ComponentEvent e) {
 
             }
         });
@@ -104,40 +105,21 @@ public class View extends JLabel implements Publisher.Subscriber {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         final java.util.List<Entity> entities = model.getAllEntities();
         for (final Entity entity : entities) {
-            final Color color = colorMap.get(entity.getType()) != null ? colorMap.get(entity.getType()) : Color.cyan;
-            g2d.setColor(color);
+            final DrawingTactic tactic = colorMap.get(entity.getType()) != null ? colorMap.get(entity.getType()) : new ColoredRectangleTactic(Color.cyan);
             final int drawingX = (int) (entity.getX() * xMult);
             final int drawingY = (int) ((entity.getY()) * yMult);
             final int drawingW = (int) (entity.getWidth() * xMult);
             final int drawingH = (int) (entity.getHeight() * yMult);
-            if (drawingX + drawingW > getWidth()) {
-                g.fillRect(
-                        drawingX,
-                        drawingY,
-                        -drawingX + getWidth(),
-                        drawingH);
-                g.fillRect(
-                        0,
-                        drawingY,
-                        drawingX + drawingW - getWidth(),
-                        drawingH
-
-                );
-                continue;
-            }
-            if (drawingX <= 0) {
-                g.fillRect(0, drawingY, drawingW + drawingX, drawingH);
-                g.fillRect(getWidth() + drawingX, drawingY, -drawingX, drawingH);
-                continue;
-            }
-            g.fillRect(drawingX, drawingY, drawingW, drawingH);
+            tactic.drawIt(g2d, drawingX, drawingY, drawingW, drawingH, getWidth(), getHeight());
         }
     }
 
 
     @Override
     public void eventHappened(final Publisher.Event event) {
-
+        if (event == Publisher.Event.MOVED) {
+            repaintYourSelf();
+        }
 
         if (event == Publisher.Event.FAIL) {
             repaintYourSelf();
@@ -146,8 +128,5 @@ public class View extends JLabel implements Publisher.Subscriber {
                     "ПОТРАЧЕНО. Результат: " + ScoreCounter.getInstance().getScore().getFullScore(),
                     "Конец игры", JOptionPane.ERROR_MESSAGE);
         }
-
     }
-
-
 }

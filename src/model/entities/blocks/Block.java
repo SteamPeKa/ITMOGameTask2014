@@ -1,7 +1,7 @@
-package  model.entities.blocks;
+package model.entities.blocks;
 
-import  model.EntityType;
-import  model.entities.Collidable;
+import model.EntityType;
+import model.entities.Collidable;
 
 /**
  * Интерфейс, описывающий блоки, от которых дудл может отпрыкнуть.
@@ -13,4 +13,8 @@ public interface Block extends Collidable {
     int getRightCoordinate();
 
     EntityType getType();
+
+    int getHalfWidth();
+
+    int getCentreCoordinate();
 }

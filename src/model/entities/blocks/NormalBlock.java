@@ -56,4 +56,13 @@ public class NormalBlock implements Block {
     public void collideWithMissile() {
         //Тут ничего не делаем
     }
+    @Override
+    public int getHalfWidth() {
+        return halfWidth;
+    }
+
+    @Override
+    public int getCentreCoordinate() {
+        return centreX;
+    }
 }

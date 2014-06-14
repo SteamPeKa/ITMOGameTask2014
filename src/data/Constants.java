@@ -20,8 +20,8 @@ public class Constants {
     public static final int BasicXVelocity = (int) (((playWidth * Math.abs(acceleration)) / (2 * basicHVelocity)) * 0.5);
     //
     //Dimensions
-    public static final int doodleFullHeight = (actualOneLineHeight) * 3;
     public static final int typicalBlockWidth = playWidth / 5;
-    public static final int doodleHalfWidth = typicalBlockWidth / 4;
+    public static final int doodleHalfWidth = typicalBlockWidth / 5;
+    public static final int doodleFullHeight = (int) (doodleHalfWidth * 2 * 2.2);
     //
 }

@@ -1,10 +1,10 @@
-package  model.entities.blocks;
+package model.entities.blocks;
 
 import data.Constants;
-import  model.ScoreCounter;
-import  model.EntityType;
-import  model.entities.doodle.Doodle;
-import  model.entities.doodle.move_tackics.RocketTactic;
+import model.ScoreCounter;
+import model.EntityType;
+import model.entities.doodle.Doodle;
+import model.entities.doodle.move_tackics.RocketTactic;
 
 /**
  * Created with IntelliJ IDEA.
@@ -36,6 +36,16 @@ public class RocketBlock implements Block {
     @Override
     public int getRightCoordinate() {
         return centreX + halfWidth;
+    }
+
+    @Override
+    public int getHalfWidth() {
+        return halfWidth;
+    }
+
+    @Override
+    public int getCentreCoordinate() {
+        return centreX;
     }
 
     @Override

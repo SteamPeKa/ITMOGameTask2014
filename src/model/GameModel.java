@@ -1,5 +1,6 @@
 package model;
 
+import data.Constants;
 import data.Publisher;
 import model.entities.blocks.Block;
 import model.entities.doodle.Doodle;
@@ -78,20 +79,19 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         }
         inspectCollisions();
         inspectNewLine();
+        notifySubscribers(Event.MOVED);
     }
 
     public void inspectCollisions() {
         final List<Block> currentLine = playGround.getLineByHCoordinate(doodle.getH()).getBlocks();
-        final int dxl = doodle.getX() - doodle.getHalfOfWidth();
-        final int dxr = doodle.getX() + doodle.getHalfOfWidth();
         if (doodle.isFalling()) {
             if (doodle.getPrevH() >= playGround.getLineByHCoordinate(doodle.getH()).getRelativeHeight() + PlayGround.getOneLineHeight()) {
-
                 for (final Block block : currentLine) {
-                    if (dxl >= block.getLeftCoordinate() && dxl <= block.getRightCoordinate()) {
-                        block.collideWithDoodle();
-                    }
-                    if (dxr >= block.getLeftCoordinate() && dxr <= block.getRightCoordinate()) {
+                    final int r1 = Math.abs(block.getCentreCoordinate() - doodle.getX());
+                    final int r2 = Math.abs((block.getCentreCoordinate() - Constants.playWidth) - doodle.getX());
+                    final int r3 = Math.abs((block.getCentreCoordinate() + Constants.playWidth) - doodle.getX());
+                    final int len = (block.getHalfWidth() + doodle.getHalfOfWidth());
+                    if (r1 < len || r2 < len || r3 < len) {
                         block.collideWithDoodle();
                     }
                 }
@@ -109,11 +109,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
             playGround.pushNewLine();
             doodle.decHeight(oneLineHeight);
             notifySubscribers(Event.MOVED);
-            try {
-                Thread.sleep(1);
-            } catch (final InterruptedException e) {
-                e.printStackTrace();
-            }
+
         }
         if (f) {
             notifySubscribers(Event.LINE_PUSHED);

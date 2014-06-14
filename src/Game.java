@@ -62,7 +62,6 @@ public class Game extends JFrame {
                 controller.keyReleased();
             }
         });
-        game.revalidate();
         controller.start();
     }
 }

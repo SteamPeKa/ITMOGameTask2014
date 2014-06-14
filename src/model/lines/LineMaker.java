@@ -1,10 +1,10 @@
 package model.lines;
 
-import  model.entities.blocks.Block;
-import  model.entities.blocks.BlueGelBlock;
-import  model.entities.blocks.NormalBlock;
-import  model.entities.blocks.RocketBlock;
-import  model.play_field.PlayGround;
+import model.entities.blocks.Block;
+import model.entities.blocks.BlueGelBlock;
+import model.entities.blocks.NormalBlock;
+import model.entities.blocks.RocketBlock;
+import model.play_field.PlayGround;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +52,7 @@ public class LineMaker {
 
     public static Line generateOneRandomLine(final int absHeight, final int height) {
         final List<Block> blocks = new ArrayList<>();
-        final int x = new Random().nextInt(playWidth - typicalBlockWidth) + typicalBlockWidth / 2;
+        final int x = new Random().nextInt(playWidth);
         if (Math.random() > 0.95) {
             blocks.add(new BlueGelBlock(x));
         } else {

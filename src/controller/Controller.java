@@ -20,6 +20,8 @@ public class Controller implements Publisher.Subscriber {
 
     private boolean activityFlag = true;
 
+    private boolean terminationFlag = false;
+
     public Controller(final GameModel model) {
         this.model = model;
         model.addSubscriber(this);
@@ -30,6 +32,9 @@ public class Controller implements Publisher.Subscriber {
     }
 
     public void start() {
+        if (terminationFlag) {
+            return;
+        }
         while (activityFlag) {
             try {
 
@@ -39,7 +44,6 @@ public class Controller implements Publisher.Subscriber {
                 e.printStackTrace();
             }
             model.move();
-            view.repaintYourSelf();
         }
 
     }
@@ -60,10 +64,21 @@ public class Controller implements Publisher.Subscriber {
     public void eventHappened(final Publisher.Event event) {
         if (event == Publisher.Event.FAIL) {
             stop();
+            terminationFlag = true;
         }
     }
 
     public void stop() {
         activityFlag = false;
+    }
+
+    public void pause() {
+        activityFlag = false;
+    }
+
+    public void unpause() {
+        if (!terminationFlag) {
+            activityFlag = true;
+        }
     }
 }
