@@ -1,6 +1,7 @@
 package view;
 
 import controller.Controller;
+import data.Constants;
 import data.Publisher;
 import model.Entity;
 import model.EntityType;
@@ -94,7 +95,7 @@ public class View extends JLabel implements Publisher.Subscriber {
         if (imageHeight == 0) {
             imageHeight = getHeight();
         }
-        int start = ((backGround.getHeight(null) - imageHeight) - model.getMinHeight() / 20);
+        int start = ((backGround.getHeight(null) - imageHeight) - (model.getMinHeight() / Constants.backgroundDiv));
         if (start <= 0) {
             start = 0;
         }

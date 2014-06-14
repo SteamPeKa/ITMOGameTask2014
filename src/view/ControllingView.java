@@ -26,7 +26,9 @@ public class ControllingView extends JLabel {
     public ControllingView(final Controller controlleR) {
         this.controller = controlleR;
         pauseButton = new JButton("Поставить на паузу");
-        this.setLayout(new GridLayout(2, 1));
+        pauseButton.setFocusable(false);
+        this.setLayout(new GridLayout(2, 1, 10, 20));
+        this.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         this.add(pauseButton);
         pauseButton.addActionListener(new ActionListener() {
 
@@ -46,6 +48,7 @@ public class ControllingView extends JLabel {
             }
         });
         restartButton = new JButton("Рестарт");
+        restartButton.setFocusable(false);
         restartButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {

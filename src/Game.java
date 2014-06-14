@@ -40,9 +40,9 @@ public class Game extends JFrame {
         controller.setView(view);
         game.setLayout(new GridLayout(1, 2));
         final JLabel additional = new JLabel();
-        additional.setLayout(new GridLayout(1, 1));
+        additional.setLayout(new GridLayout(2, 1));
         additional.add(view2);
-        //additional.add(view3); //Пока что это не работает вообще. Очень странная штука творится.
+        additional.add(view3); //Пока что это не работает вообще. Очень странная штука творится.
         view.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
         view2.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
         game.add(view);
@@ -68,7 +68,6 @@ public class Game extends JFrame {
                 controller.keyReleased();
             }
         });
-        game.requestFocus();
         controller.start();
     }
 

@@ -24,4 +24,7 @@ public class Constants {
     public static final int doodleHalfWidth = typicalBlockWidth / 5;
     public static final int doodleFullHeight = (int) (doodleHalfWidth * 2 * 1.8);
     //
+    //View
+    public static final int backgroundDiv = 50;
+    //
 }
