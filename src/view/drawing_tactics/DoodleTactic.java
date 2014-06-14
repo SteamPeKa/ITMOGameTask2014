@@ -37,26 +37,11 @@ public class DoodleTactic implements DrawingTactic {
             rescueTactic.drawIt(g, x, y, w, h, maxW, maxH);
             return;
         }
-        g.setColor(Color.RED);
         if (x + w > maxW) {
-            g.fillRect(
-                    x,
-                    y,
-                    -x + maxW,
-                    h);
-            g.fillRect(
-                    0,
-                    y,
-                    x + w - maxW,
-                    h
-
-            );
-            return;
+            g.drawImage(image, x - maxW, y, w, h, null);
         }
         if (x <= 0) {
-            g.fillRect(0, y, w + x, h);
-            g.fillRect(maxW + x, y, -x, h);
-            return;
+            g.drawImage(image, x + maxW, y, w, h, null);
         }
         g.drawImage(image, x, y, w, h, null);
     }

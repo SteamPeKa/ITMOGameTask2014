@@ -32,20 +32,18 @@ public class Controller implements Publisher.Subscriber {
     }
 
     public void start() {
-        if (terminationFlag) {
-            return;
-        }
-        while (activityFlag) {
-            try {
+        while (!terminationFlag) {
+            while (activityFlag) {
+                try {
 
-                Thread.sleep(Constants.iterationTime);
-            } catch (final InterruptedException
-                    e) {
-                e.printStackTrace();
+                    Thread.sleep(Constants.iterationTime);
+                } catch (final InterruptedException
+                        e) {
+                    e.printStackTrace();
+                }
+                model.move();
             }
-            model.move();
         }
-
     }
 
     public void leftKeyPressed() {
@@ -64,7 +62,7 @@ public class Controller implements Publisher.Subscriber {
     public void eventHappened(final Publisher.Event event) {
         if (event == Publisher.Event.FAIL) {
             stop();
-            terminationFlag = true;
+        //    terminationFlag = true;
         }
     }
 
@@ -79,6 +77,14 @@ public class Controller implements Publisher.Subscriber {
     public void unpause() {
         if (!terminationFlag) {
             activityFlag = true;
+        } else {
+            view.eventHappened(Publisher.Event.FAIL);
         }
+    }
+
+    public void restart() {
+        model.restart();
+        terminationFlag = false;
+        activityFlag = true;
     }
 }

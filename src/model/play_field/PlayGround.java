@@ -20,9 +20,9 @@ import static data.Constants.*;
  * Time: 17:10
  */
 public class PlayGround {
-    private final LinesList lines;
+    private  LinesList lines;
 
-    private static PlayGround ourInstance = new PlayGround();
+    private static final PlayGround ourInstance = new PlayGround();
 
     public static PlayGround getInstance() {
         return ourInstance;
@@ -74,5 +74,9 @@ public class PlayGround {
 
     public void pushNewLine() {
         lines.pushLine(LineMaker.generateNewLine());
+    }
+
+    public void restart() {
+        lines = LineMaker.makeStartingLines();
     }
 }

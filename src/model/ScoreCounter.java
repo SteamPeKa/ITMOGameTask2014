@@ -14,7 +14,7 @@ import java.util.*;
  */
 public class ScoreCounter implements Publisher {
     Set<Subscriber> subscribers = new HashSet<>();
-    private static ScoreCounter ourInstance = new ScoreCounter();
+    private static final ScoreCounter ourInstance = new ScoreCounter();
 
     private final Map<String, Integer> scoreInfo = new HashMap<>();
 
@@ -86,6 +86,11 @@ public class ScoreCounter implements Publisher {
         }
     }
 
+    public void restart() {
+        fullScore = 0;
+        scoreInfo.clear();
+    }
+
     public enum ModelEvent {
         COLLISION, LINE_ADDED;
     }
@@ -97,7 +102,7 @@ public class ScoreCounter implements Publisher {
 
         public ScoreInfo(final Map<String, Integer> score, final int fullScore) {
             this.score = score;
-            this.fullScore = fullScore + PlayGround.getInstance().getLineByHCoordinate(0).getAbsoluteHeight()/10;
+            this.fullScore = fullScore + PlayGround.getInstance().getLineByHCoordinate(0).getAbsoluteHeight() / 10;
         }
 
 

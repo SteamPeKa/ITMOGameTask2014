@@ -20,7 +20,7 @@ public interface Publisher {
     }
 
     public enum Event {
-        FAIL, MOVED, APPROXED, LINE_PUSHED, LINE_PUSHING, SCORE_CHANGED;
+        FAIL, MOVED, APPROXED, LINE_PUSHED, LINE_PUSHING, SCORE_CHANGED, UNPAUSED;
     }
 
 }

@@ -26,7 +26,7 @@ public class Doodle implements Movable, Publisher {
     private final Set<Subscriber> subscribers;
 
 
-    private static Doodle ourInstance = new Doodle(playWidth / 2, actualOneLineHeight*5);
+    private static final Doodle ourInstance = new Doodle(playWidth / 2, actualOneLineHeight*5);
 
     public static Doodle getInstance() {
         return ourInstance;
@@ -91,6 +91,10 @@ public class Doodle implements Movable, Publisher {
         for (final Subscriber subscriber : subscribers) {
             subscriber.eventHappened(event);
         }
+    }
+
+    public void restart() {
+       coordinates=new Coordinates(playWidth / 2, actualOneLineHeight*5);
     }
 
     public class Coordinates {

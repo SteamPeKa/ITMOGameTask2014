@@ -159,4 +159,12 @@ public class GameModel implements Publisher, Publisher.Subscriber {
     public int getMinHeight() {
         return playGround.getLineByHCoordinate(0).getAbsoluteHeight();
     }
+
+    public void restart() {
+        PlayGround.getInstance().restart();
+        Doodle.getInstance().restart();
+        doodle.setMoveTactic(new Standard());
+        doodle.addSubscriber(this);
+        scoreCounter.restart();
+    }
 }

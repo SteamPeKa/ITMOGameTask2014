@@ -39,8 +39,6 @@ public class View extends JLabel implements Publisher.Subscriber {
 
     private final Map<EntityType, DrawingTactic> colorMap = new EnumMap<>(EntityType.class);
 
-    public boolean flag = false;
-
     private Image backGround;
 
     public View(final Controller controller, final GameModel model) {
