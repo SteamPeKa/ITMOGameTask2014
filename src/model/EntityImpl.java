@@ -1,0 +1,43 @@
+package model;
+
+public class EntityImpl implements Entity {
+
+        private final EntityType type;
+        private final int x;
+        private final int y;
+        private final int width;
+        private final int height;
+
+        public EntityImpl(final EntityType type, final int x, final int y, final int width, final int height) {
+            this.type = type;
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+        }
+
+        @Override
+        public EntityType getType() {
+            return type;
+        }
+
+        @Override
+        public int getX() {
+            return x;
+        }
+
+        @Override
+        public int getY() {
+            return y;
+        }
+
+        @Override
+        public int getWidth() {
+            return width;
+        }
+
+        @Override
+        public int getHeight() {
+            return height;
+        }
+    }
