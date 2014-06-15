@@ -1,7 +1,7 @@
-package  model.entities.doodle.move_tackics;
+package model.entities.doodle.move_tackics;
 
-import  model.GameEndedException;
-import  model.entities.doodle.Doodle;
+import model.GameEndedException;
+import model.entities.doodle.Doodle;
 
 public interface MoveTactic {
     public void move(final Doodle.Coordinates coordinates) throws GameEndedException;
@@ -11,5 +11,7 @@ public interface MoveTactic {
     public void setHVelocity(int newHV);
 
     public boolean isFalling();
+
+    public int getXOrientation();
 
 }

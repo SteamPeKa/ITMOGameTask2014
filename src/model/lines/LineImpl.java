@@ -13,7 +13,7 @@ import java.util.List;
  * Time: 17:33
  */
 public class LineImpl implements Line {
-    private List<Block> blocks;
+    private final List<Block> blocks;
     private final int absoluteHeight;
     private int relativeHeight;
 

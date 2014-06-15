@@ -91,7 +91,7 @@ public class LineMaker {
         if (generated % (actualOneLineHeight * difficulty) != 0) {
             if (generated % (actualOneLineHeight) == 0) {
                 if (Math.random() < ((double) temperature / (Math.pow(generated, 13d / 10d)))) {
-                    return generateOneAdditionalLine(absHeight, relHeight);
+                    return generateOneRandomLine(absHeight, relHeight);
                 }
             }
             return generateEmptyLine(absHeight, relHeight);

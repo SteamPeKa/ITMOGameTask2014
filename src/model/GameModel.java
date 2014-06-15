@@ -59,7 +59,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         final List<Entity> entities = new ArrayList<>();
         entities.addAll(playGround.getBlocksAsEntities());
         entities.add(new EntityImpl(
-                EntityType.DOODLE,
+                doodle.getType(),
                 (doodle.getX() - doodle.getHalfOfWidth()),
                 getFieldHeight() - (doodle.getH() + doodle.getFullHeight()),
                 (doodle.getHalfOfWidth() * 2),

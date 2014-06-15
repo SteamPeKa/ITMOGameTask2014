@@ -1,5 +1,6 @@
 package model.lines;
 
+import model.entities.blocks.Block;
 import model.play_field.PlayGround;
 
 import java.util.ArrayList;
@@ -51,5 +52,12 @@ public class LinesList {
         }
     }
 
+    public void destroyBlock(final Block block) {
+        synchronized (lines) {
+            for (final Line line : lines) {
+                line.getBlocks().remove(block);
+            }
+        }
+    }
 
 }

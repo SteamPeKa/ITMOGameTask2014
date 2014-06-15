@@ -62,7 +62,7 @@ public class Controller implements Publisher.Subscriber {
     public void eventHappened(final Publisher.Event event) {
         if (event == Publisher.Event.FAIL) {
             stop();
-        //    terminationFlag = true;
+            //    terminationFlag = true;
         }
     }
 
@@ -79,6 +79,7 @@ public class Controller implements Publisher.Subscriber {
             activityFlag = true;
         } else {
             view.eventHappened(Publisher.Event.FAIL);
+            notifyAll();
         }
     }
 

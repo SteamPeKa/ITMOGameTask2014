@@ -1,8 +1,8 @@
 package model.entities.blocks;
 
 import data.Constants;
-import model.ScoreCounter;
 import model.EntityType;
+import model.ScoreCounter;
 import model.entities.doodle.Doodle;
 import model.entities.doodle.move_tackics.RocketTactic;
 

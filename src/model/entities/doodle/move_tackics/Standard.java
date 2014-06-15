@@ -1,8 +1,8 @@
-package  model.entities.doodle.move_tackics;
+package model.entities.doodle.move_tackics;
 
-import  model.GameEndedException;
-import  model.entities.doodle.Doodle;
-import  model.play_field.PlayGround;
+import model.GameEndedException;
+import model.entities.doodle.Doodle;
+import model.play_field.PlayGround;
 
 import static data.Constants.*;
 
@@ -77,5 +77,12 @@ public class Standard implements MoveTactic {
         return hVelocity < 0;
     }
 
+    @Override
+    public int getXOrientation() {
+        if (xVelocity == 0) {
+            return 0;
+        }
+        return xVelocity > 0 ? 1 : -1;
+    }
 
 }

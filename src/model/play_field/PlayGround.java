@@ -80,4 +80,8 @@ public class PlayGround {
         LineMaker.restart();
         lines = LineMaker.makeStartingLines();
     }
+
+    public void destroyBlock(final Block block) {
+        lines.destroyBlock(block);
+    }
 }

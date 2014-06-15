@@ -1,13 +1,13 @@
-package  model.entities.doodle.move_tackics;
+package model.entities.doodle.move_tackics;
 
 import data.Constants;
-import  model.GameEndedException;
-import  model.entities.doodle.Doodle;
-import  model.play_field.PlayGround;
+import model.GameEndedException;
+import model.entities.doodle.Doodle;
+import model.play_field.PlayGround;
 
-import static  data.Constants.playHeight;
-import static  data.Constants.playWidth;
-import static  data.Constants.rocketProcs;
+import static data.Constants.playHeight;
+import static data.Constants.playWidth;
+import static data.Constants.rocketProcs;
 
 /**
  * Created with IntelliJ IDEA.
@@ -68,5 +68,13 @@ public class RocketTactic implements MoveTactic {
     @Override
     public boolean isFalling() {
         return false;
+    }
+
+    @Override
+    public int getXOrientation() {
+        if (xVelocity == 0) {
+            return 0;
+        }
+        return xVelocity > 0 ? 1 : -1;
     }
 }

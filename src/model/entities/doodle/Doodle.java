@@ -1,6 +1,7 @@
-package  model.entities.doodle;
+package model.entities.doodle;
 
 import data.Publisher;
+import model.EntityType;
 import model.GameEndedException;
 import model.entities.Movable;
 import model.entities.doodle.move_tackics.MoveTactic;
@@ -25,8 +26,10 @@ public class Doodle implements Movable, Publisher {
 
     private final Set<Subscriber> subscribers;
 
+    private Orientation lastOrientation = Orientation.LEFT;
 
-    private static final Doodle ourInstance = new Doodle(playWidth / 2, actualOneLineHeight*5);
+
+    private static final Doodle ourInstance = new Doodle(playWidth / 2, actualOneLineHeight * 5);
 
     public static Doodle getInstance() {
         return ourInstance;
@@ -68,6 +71,7 @@ public class Doodle implements Movable, Publisher {
 
     @Override
     public void move() throws GameEndedException {
+        lastOrientation = moveTactic.getXOrientation() == 0 ? lastOrientation : moveTactic.getXOrientation() > 0 ? Orientation.RIGHT : Orientation.LEFT;
         moveTactic.move(coordinates);
     }
 
@@ -94,7 +98,7 @@ public class Doodle implements Movable, Publisher {
     }
 
     public void restart() {
-       coordinates=new Coordinates(playWidth / 2, actualOneLineHeight*5);
+        coordinates = new Coordinates(playWidth / 2, actualOneLineHeight * 5);
     }
 
     public class Coordinates {
@@ -130,14 +134,38 @@ public class Doodle implements Movable, Publisher {
             return h;
         }
 
-        public void setX(final int newX){
-            x=newX;
+        public void setX(final int newX) {
+            x = newX;
         }
 
     }
 
     public void decHeight(final int dh) {
         coordinates.h -= dh;
+    }
+
+    public enum Orientation {
+        LEFT, RIGHT;
+    }
+
+    public EntityType getType() {
+        if (isFalling()) {
+            if (moveTactic.getXOrientation() > 0) {
+                return EntityType.DOODLE_R_F;
+            }
+            if (moveTactic.getXOrientation() < 0) {
+                return EntityType.DOODLE_L_F;
+            }
+            return lastOrientation.equals(Orientation.LEFT) ? EntityType.DOODLE_L_F : EntityType.DOODLE_R_F;
+        } else {
+            if (moveTactic.getXOrientation() > 0) {
+                return EntityType.DOODLE_R_J;
+            }
+            if (moveTactic.getXOrientation() < 0) {
+                return EntityType.DOODLE_L_J;
+            }
+            return lastOrientation.equals(Orientation.LEFT) ? EntityType.DOODLE_L_J : EntityType.DOODLE_R_J;
+        }
     }
 }
 

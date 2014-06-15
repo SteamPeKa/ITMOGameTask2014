@@ -56,19 +56,20 @@ public class ControllingView extends JLabel implements Publisher.Subscriber {
                 controller.restart();
             }
         });
-        restartButton.setVisible(false);
+        restartButton.setEnabled(false);
         this.add(restartButton);
     }
 
     @Override
     public void eventHappened(final Publisher.Event event) {
         if (event == Publisher.Event.FAIL) {
-            restartButton.setVisible(true);
-            pauseButton.setVisible(false);
+            restartButton.setEnabled(true);
+            pauseButton.setEnabled(false);
+
         }
         if (event == Publisher.Event.RESTARTED) {
-            restartButton.setVisible(false);
-            pauseButton.setVisible(true);
+            restartButton.setEnabled(false);
+            pauseButton.setEnabled(true);
         }
     }
 

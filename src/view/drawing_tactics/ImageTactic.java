@@ -9,27 +9,24 @@ import java.io.IOException;
  * Created with IntelliJ IDEA.
  * User: Балагуров Владимир
  * группа 2742
- * Date: 14.06.14
- * Time: 20:10
+ * Date: 15.06.14
+ * Time: 19:17
  */
-public class DoodleTactic implements DrawingTactic {
-
+public abstract class ImageTactic implements DrawingTactic {
     private final Image image;
+    private final ColoredRectangleTactic rescueTactic;
 
-    private final DrawingTactic rescueTactic;
-
-    public DoodleTactic() {
+    protected ImageTactic(final String imagePath, final Color rescueColor) {
         Image image1;
         try {
-            image1 = ImageIO.read(new File("res/pear.png"));
+            image1 = ImageIO.read(new File(imagePath));
         } catch (final IOException e) {
             e.printStackTrace();
             image1 = null;
         }
         image = image1;
-        rescueTactic = image == null ? new ColoredRectangleTactic(Color.RED) : null;
+        this.rescueTactic = image == null ? new ColoredRectangleTactic(rescueColor) : null;
     }
-
 
     @Override
     public void drawIt(final Graphics2D g, final int x, final int y, final int w, final int h, final int maxW, final int maxH) {

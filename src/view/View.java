@@ -7,9 +7,7 @@ import model.Entity;
 import model.EntityType;
 import model.GameModel;
 import model.ScoreCounter;
-import view.drawing_tactics.ColoredRectangleTactic;
-import view.drawing_tactics.DoodleTactic;
-import view.drawing_tactics.DrawingTactic;
+import view.drawing_tactics.*;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -46,10 +44,14 @@ public class View extends JLabel implements Publisher.Subscriber {
         this.controller = controller;
         this.model = model;
         model.addSubscriber(this);
-        colorMap.put(EntityType.DOODLE, new DoodleTactic());
-        colorMap.put(EntityType.STANDARD_BLOCK, new ColoredRectangleTactic(Color.GREEN));
-        colorMap.put(EntityType.BLUE_GEL_BLOCK, new ColoredRectangleTactic(Color.BLUE));
-        colorMap.put(EntityType.ROCKET_BLOCK, new ColoredRectangleTactic(Color.ORANGE));
+        colorMap.put(EntityType.DOODLE_R_F, new DoodleRFTactic());
+        colorMap.put(EntityType.DOODLE_L_F, new DoodleLFTactic());
+        colorMap.put(EntityType.DOODLE_R_J, new DoodleRJTactic());
+        colorMap.put(EntityType.DOODLE_L_J, new DoodleLJTactic());
+
+        colorMap.put(EntityType.STANDARD_BLOCK, new StandardBlockTactic());
+        colorMap.put(EntityType.BLUE_GEL_BLOCK, new BlueBlockTactic());
+        colorMap.put(EntityType.ROCKET_BLOCK, new RocketBlockTactic());
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         try {
             backGround = ImageIO.read(new File(
