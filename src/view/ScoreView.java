@@ -1,8 +1,8 @@
 package view;
 
 import data.Publisher;
-import  model.GameModel;
-import  model.ScoreCounter;
+import model.GameModel;
+import model.ScoreCounter;
 
 import javax.swing.*;
 
@@ -23,6 +23,7 @@ public class ScoreView extends JLabel implements Publisher.Subscriber {
         model.addSubscriber(this);
         eventHappened(Publisher.Event.SCORE_CHANGED);
         ScoreCounter.getInstance().addSubscriber(this);
+        setFocusable(false);
 
     }
 

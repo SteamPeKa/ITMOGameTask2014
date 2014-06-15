@@ -166,5 +166,6 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         doodle.setMoveTactic(new Standard());
         doodle.addSubscriber(this);
         scoreCounter.restart();
+        notifySubscribers(Event.RESTARTED);
     }
 }

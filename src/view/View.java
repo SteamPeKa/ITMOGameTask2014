@@ -81,6 +81,7 @@ public class View extends JLabel implements Publisher.Subscriber {
 
             }
         });
+        setFocusable(false);
     }
 
 

@@ -10,7 +10,7 @@ package model;
 public enum EntityType {
 
 
-    DOODLE(false), STANDARD_BLOCK(true), BLUE_GEL_BLOCK(true), ROCKET_BLOCK(true);
+    DOODLE(false), STANDARD_BLOCK(true), BLUE_GEL_BLOCK(true), ROCKET_BLOCK(true), ADDITIONAL_BLOCK(true);
 
     private final boolean isBlock;
 

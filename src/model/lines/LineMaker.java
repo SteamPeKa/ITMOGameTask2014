@@ -1,9 +1,6 @@
 package model.lines;
 
-import model.entities.blocks.Block;
-import model.entities.blocks.BlueGelBlock;
-import model.entities.blocks.NormalBlock;
-import model.entities.blocks.RocketBlock;
+import model.entities.blocks.*;
 import model.play_field.PlayGround;
 
 import java.util.ArrayList;
@@ -91,10 +88,28 @@ public class LineMaker {
         }
         *///@TODO
 
-        if (generated % (actualOneLineHeight * 4) != 0) {
+        if (generated % (actualOneLineHeight * difficulty) != 0) {
+            if (generated % (actualOneLineHeight) == 0) {
+                if (Math.random() < ((double) temperature / (Math.pow(generated, 13d / 10d)))) {
+                    return generateOneAdditionalLine(absHeight, relHeight);
+                }
+            }
             return generateEmptyLine(absHeight, relHeight);
         } else {
+
             return generateOneRandomLine(absHeight, relHeight);
         }
+    }
+
+    public static Line generateOneAdditionalLine(final int absHeight, final int height) {
+        final List<Block> blocks = new ArrayList<>();
+        final int x = new Random().nextInt(playWidth);
+        blocks.add(new AdditionalBlock(x));
+        generated++;
+        return new LineImpl(blocks, absHeight, height);
+    }
+
+    public static void restart() {
+        generated = 0;
     }
 }

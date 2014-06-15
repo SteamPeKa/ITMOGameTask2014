@@ -1,4 +1,4 @@
-package  model.entities.blocks;
+package model.entities.blocks;
 
 import data.Constants;
 import model.EntityType;
@@ -14,8 +14,8 @@ import model.entities.doodle.Doodle;
  */
 public class NormalBlock implements Block {
 
-    private int centreX;
-    private int halfWidth;
+    private final int centreX;
+    private final int halfWidth;
     private boolean scored = false;
 
     public NormalBlock(final int centreX, final int halfWidth) {
@@ -56,6 +56,7 @@ public class NormalBlock implements Block {
     public void collideWithMissile() {
         //Тут ничего не делаем
     }
+
     @Override
     public int getHalfWidth() {
         return halfWidth;

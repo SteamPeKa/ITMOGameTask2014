@@ -6,6 +6,8 @@ import view.View;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -37,6 +39,7 @@ public class Game extends JFrame {
         final View view = new View(controller, model);
         final ScoreView view2 = new ScoreView(model);
         final ControllingView view3 = new ControllingView(controller);
+        model.addSubscriber(view3);
         controller.setView(view);
         game.setLayout(new GridLayout(1, 2));
         final JLabel additional = new JLabel();
@@ -66,6 +69,20 @@ public class Game extends JFrame {
             @Override
             public void keyReleased(final KeyEvent e) {
                 controller.keyReleased();
+            }
+        });
+        game.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(final FocusEvent e) {
+
+            }
+
+            @Override
+            public void focusLost(final FocusEvent e) {
+                System.out.println("Фокус потерян");
+                game.requestFocus(false);
+                game.requestFocus();
+
             }
         });
         controller.start();

@@ -14,6 +14,10 @@ public class Constants {
     public static final int iterationTime = 25;
     public static final int rocketProcs = 150;
     //
+    //LineGenerating
+    public static final int temperature = 5000;
+    public static final int difficulty = 4;
+    //
     //Speed
     public static final int basicHVelocity = 30;
     public static final int acceleration = (int) (-1 * (Math.pow(basicHVelocity, 2) / (2 * (9.3 * actualOneLineHeight))));

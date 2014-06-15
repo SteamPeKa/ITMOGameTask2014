@@ -1,6 +1,7 @@
 package view;
 
 import controller.Controller;
+import data.Publisher;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +15,7 @@ import java.awt.event.ActionListener;
  * Date: 14.06.14
  * Time: 22:05
  */
-public class ControllingView extends JLabel {
+public class ControllingView extends JLabel implements Publisher.Subscriber {
 
     private final JButton pauseButton;
 
@@ -55,7 +56,20 @@ public class ControllingView extends JLabel {
                 controller.restart();
             }
         });
+        restartButton.setVisible(false);
         this.add(restartButton);
+    }
+
+    @Override
+    public void eventHappened(final Publisher.Event event) {
+        if (event == Publisher.Event.FAIL) {
+            restartButton.setVisible(true);
+            pauseButton.setVisible(false);
+        }
+        if (event == Publisher.Event.RESTARTED) {
+            restartButton.setVisible(false);
+            pauseButton.setVisible(true);
+        }
     }
 
 

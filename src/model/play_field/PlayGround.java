@@ -20,7 +20,7 @@ import static data.Constants.*;
  * Time: 17:10
  */
 public class PlayGround {
-    private  LinesList lines;
+    private LinesList lines;
 
     private static final PlayGround ourInstance = new PlayGround();
 
@@ -77,6 +77,7 @@ public class PlayGround {
     }
 
     public void restart() {
+        LineMaker.restart();
         lines = LineMaker.makeStartingLines();
     }
 }
