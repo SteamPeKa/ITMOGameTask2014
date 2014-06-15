@@ -21,6 +21,7 @@ public class ControllingView extends JLabel implements Publisher.Subscriber {
 
     private final JButton restartButton;
 
+
     private final Controller controller;
 
 
