@@ -2,8 +2,8 @@ package model.entities.blocks;
 
 import data.Constants;
 import model.ScoreCounter;
-import model.EntityType;
 import model.entities.doodle.Doodle;
+import view.EntityType;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,17 +13,20 @@ import model.entities.doodle.Doodle;
  * Time: 20:27
  */
 public class BlueGelBlock implements Block {
-    private int centreX;
-    private int halfWidth;
+    private final int centreX;
+    private final int halfWidth;
+    private final int y;
 
     private boolean scored = false;
 
-    public BlueGelBlock(final int centreX, final int halfWidth) {
+    public BlueGelBlock(final int centreX, final int halfWidth, final int y) {
         this.halfWidth = halfWidth;
         this.centreX = centreX;
+        this.y = y;
     }
 
-    public BlueGelBlock(final int centreX) {
+    public BlueGelBlock(final int centreX, final int y) {
+        this.y = y;
         this.halfWidth = Constants.typicalBlockWidth / 2;
         this.centreX = centreX;
     }
@@ -60,10 +63,37 @@ public class BlueGelBlock implements Block {
             ScoreCounter.getInstance().eventHappened(getType(), ScoreCounter.ModelEvent.COLLISION);
             scored = true;
         }
+
     }
 
     @Override
-    public void collideWithMissile() {
+    public boolean collideWithMissile() {
+        return false;
         //Тут ничего не делаем
+    }
+
+    @Override
+    public HitBox getHitBox() {
+        return new HitBox() {
+            @Override
+            public int getX() {
+                return centreX - halfWidth;
+            }
+
+            @Override
+            public int getY() {
+                return y - Constants.actualOneLineHeight;
+            }
+
+            @Override
+            public int getWidth() {
+                return halfWidth * 2;
+            }
+
+            @Override
+            public int getHeight() {
+                return Constants.actualOneLineHeight;
+            }
+        };
     }
 }

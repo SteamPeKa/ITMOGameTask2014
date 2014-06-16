@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c069de56-e869-4862-b43c-ffb2e8aa29d4" name="Default" comment="" />
+    <list default="true" id="c069de56-e869-4862-b43c-ffb2e8aa29d4" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Entity.java" afterPath="$PROJECT_DIR$/src/view/OutputEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/EntityImpl.java" afterPath="$PROJECT_DIR$/src/view/OutputEntityImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/EntityType.java" afterPath="$PROJECT_DIR$/src/view/EntityType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java" afterPath="$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/blocks/Block.java" afterPath="$PROJECT_DIR$/src/model/entities/blocks/Block.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java" afterPath="$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/Collidable.java" afterPath="$PROJECT_DIR$/src/model/entities/Collidable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/Constants.java" afterPath="$PROJECT_DIR$/src/data/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Controller.java" afterPath="$PROJECT_DIR$/src/controller/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/doodle/Doodle.java" afterPath="$PROJECT_DIR$/src/model/entities/doodle/Doodle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/GameModel.java" afterPath="$PROJECT_DIR$/src/model/GameModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/lines/LineMaker.java" afterPath="$PROJECT_DIR$/src/model/lines/LineMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java" afterPath="$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/play_field/PlayGround.java" afterPath="$PROJECT_DIR$/src/model/play_field/PlayGround.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/Publisher.java" afterPath="$PROJECT_DIR$/src/data/Publisher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java" afterPath="$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ScoreCounter.java" afterPath="$PROJECT_DIR$/src/model/ScoreCounter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/View.java" afterPath="$PROJECT_DIR$/src/view/View.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="lang.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,23 +76,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/controller/Controller.java" line="86" class="controller.Controller" package="controller">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -81,46 +86,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DoodleRFTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScoreView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ScoreView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllingView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ControllingView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="20" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="1155">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoodleRJTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="33" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="12" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.3442623" vertical-offset="924" max-vertical-offset="1290">
+            <state line="90" column="0" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="1013" max-vertical-offset="1335">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RocketBlock.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="14" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameModel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="44" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.14723927" vertical-offset="777" max-vertical-offset="3045">
               <folding />
             </state>
           </provider>
@@ -129,7 +127,7 @@
       <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="64" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1845">
+            <state line="105" column="0" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
@@ -138,36 +136,47 @@
       <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="67" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="585">
+            <state line="27" column="47" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
+      <file leaf-file-name="Doodle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="82" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="765">
+            <state line="144" column="7" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="2250">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///jdk1.7.0_45/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="830" column="0" selection-start="30317" selection-end="30317" vertical-scroll-proportion="0.0" vertical-offset="11998" max-vertical-offset="17325">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayGround.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/play_field/PlayGround.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Missile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/entities/Missile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="28" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1395">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoodleLJTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLJTactic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="15" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jumpLeft.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/jumpLeft.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -186,47 +195,55 @@
       <list>
         <option value="$PROJECT_DIR$/src/Publisher.java" />
         <option value="$PROJECT_DIR$/src/model/EntityImpl.java" />
-        <option value="$PROJECT_DIR$/src/model/Entity.java" />
         <option value="$PROJECT_DIR$/src/model/GameEndedException.java" />
         <option value="$PROJECT_DIR$/src/model/lines/Line.java" />
         <option value="$PROJECT_DIR$/src/Constants.java" />
         <option value="$PROJECT_DIR$/src/view/drow_tacktics/DrowTacktic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DrawingTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/blocks/Block.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java" />
         <option value="$PROJECT_DIR$/src/model/ScoreCounter.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java" />
         <option value="$PROJECT_DIR$/src/view/ScoreView.java" />
-        <option value="$PROJECT_DIR$/src/model/lines/LineMaker.java" />
-        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/StandartBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/ImageTacktic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/BlueBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/model/lines/LineImpl.java" />
-        <option value="$PROJECT_DIR$/src/model/play_field/PlayGround.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/RocketBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/model/lines/LinesList.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/model/entities/doodle/move_tackics/MoveTactic.java" />
         <option value="$PROJECT_DIR$/src/model/entities/doodle/move_tackics/Standard.java" />
         <option value="$PROJECT_DIR$/src/model/entities/doodle/move_tackics/RocketTactic.java" />
-        <option value="$PROJECT_DIR$/src/model/EntityType.java" />
-        <option value="$PROJECT_DIR$/src/model/GameModel.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DoodleTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DoodleLFTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DoodleLJTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java" />
-        <option value="$PROJECT_DIR$/src/view/View.java" />
         <option value="$PROJECT_DIR$/src/model/entities/doodle/Doodle.java" />
-        <option value="$PROJECT_DIR$/src/data/Constants.java" />
         <option value="$PROJECT_DIR$/src/view/ImageControllingView.java" />
         <option value="$PROJECT_DIR$/src/view/ControllingView.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/doodle/move_tackics/MissileTacktic.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/doodle/move_tackics/MissileTactic.java" />
+        <option value="$PROJECT_DIR$/src/view/drawing_tactics/DestroyedTactic.java" />
+        <option value="$PROJECT_DIR$/src/model/EntityType.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/Destroyable.java" />
+        <option value="$PROJECT_DIR$/src/model/Entity.java" />
+        <option value="$PROJECT_DIR$/src/model/OutputEntity.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/blocks/Block.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/InnerEntity.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java" />
+        <option value="$PROJECT_DIR$/src/model/lines/LineMaker.java" />
+        <option value="$PROJECT_DIR$/src/model/play_field/PlayGround.java" />
+        <option value="$PROJECT_DIR$/src/view/View.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/Collidable.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java" />
+        <option value="$PROJECT_DIR$/src/data/Constants.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/Missile.java" />
+        <option value="$PROJECT_DIR$/src/model/GameModel.java" />
       </list>
     </option>
   </component>
@@ -374,7 +391,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,91 +437,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawing_tactics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play_field" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,88 +460,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doodle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doodle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="move_tackics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,27 +481,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -674,6 +507,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -740,6 +574,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -765,19 +612,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -856,7 +690,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="19" width="1375" height="753" extended-state="0" />
+    <frame x="-5" y="19" width="1375" height="753" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -881,8 +715,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -906,41 +740,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ScoreCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/lines/LineMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="49" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1575">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="14" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="2160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/GameEndedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="20" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -958,18 +757,6 @@
     <entry file="file://$PROJECT_DIR$/res/pear.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="23" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.57474226" vertical-offset="482" max-vertical-offset="1050">
-          <folding>
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ScoreCounter.java">
@@ -991,34 +778,6 @@
         <state line="258" column="0" selection-start="6140" selection-end="6140" vertical-scroll-proportion="-1.2371134" vertical-offset="3870" max-vertical-offset="7455" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="355" selection-end="355" vertical-scroll-proportion="0.6572165" vertical-offset="0" max-vertical-offset="388">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="8" selection-start="972" selection-end="972" vertical-scroll-proportion="0.5798969" vertical-offset="360" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/lines/LineMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="49" selection-start="3259" selection-end="3259" vertical-scroll-proportion="0.0" vertical-offset="1022" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
@@ -1026,9 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lang.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="568" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DrawingTactic.java">
@@ -1067,13 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/play_field/PlayGround.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="32" selection-start="2330" selection-end="2330" vertical-scroll-proportion="0.0" vertical-offset="617" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/BlueBlockTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="8" selection-start="221" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
@@ -1088,44 +838,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.33333334" vertical-offset="448" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/lines/LinesList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="9" selection-start="1397" selection-end="1397" vertical-scroll-proportion="1.2295082" vertical-offset="330" max-vertical-offset="930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="5" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="10" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/EntityImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
@@ -1151,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/EntityType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="77" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLFTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="33" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1167,28 +875,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="17" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLJTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="16" column="0" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="33" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="58" selection-start="629" selection-end="629" vertical-scroll-proportion="0.8073654" vertical-offset="0" max-vertical-offset="2250">
+        <state line="15" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
@@ -1198,32 +899,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="32" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-2.1351352" vertical-offset="1830" max-vertical-offset="2385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="67" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="82" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="765">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ControllingView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="20" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="789" max-vertical-offset="1155">
+        <state line="48" column="17" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0" vertical-offset="720" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
@@ -1235,16 +920,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/View.java">
+    <entry file="file://$PROJECT_DIR$/src/view/EntityType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="64" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1845">
+        <state line="12" column="112" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///jdk1.7.0_45/src.zip!/java/awt/event/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1089" column="15" selection-start="38748" selection-end="38748" vertical-scroll-proportion="0.33333334" vertical-offset="15730" max-vertical-offset="24810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/OutputEntityImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="51" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/OutputEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/lines/LinesList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/Destroyable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DestroyedTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/AdditionalBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="45" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/Collidable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/BlueGelBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="15" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/NormalBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="73" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/lines/LineMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="75" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///jdk1.7.0_45/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="830" column="0" selection-start="30317" selection-end="30317" vertical-scroll-proportion="0.0" vertical-offset="11998" max-vertical-offset="17325">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="12" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.3442623" vertical-offset="924" max-vertical-offset="1290">
+        <state line="90" column="0" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0" vertical-offset="1013" max-vertical-offset="1335">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="7" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="2250">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/play_field/PlayGround.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0" vertical-offset="448" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="14" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="47" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="28" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1395">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.0" vertical-offset="1098" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="44" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.14723927" vertical-offset="777" max-vertical-offset="3045">
           <folding />
         </state>
       </provider>

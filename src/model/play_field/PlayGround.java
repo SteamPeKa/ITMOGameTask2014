@@ -1,7 +1,7 @@
 package model.play_field;
 
-import model.Entity;
-import model.EntityImpl;
+import view.OutputEntity;
+import view.OutputEntityImpl;
 import model.entities.blocks.Block;
 import model.lines.Line;
 import model.lines.LineMaker;
@@ -55,13 +55,13 @@ public class PlayGround {
         return lines.getLine(h);
     }
 
-    public List<Entity> getBlocksAsEntities() {
-        final List<Entity> entities = new ArrayList<>();
+    public List<OutputEntity> getBlocksAsEntities() {
+        final List<OutputEntity> entities = new ArrayList<>();
         for (int i = 0; i < linesQuantity; i++) {
             final Line current = lines.getLine(i);
             final int y = playHeight - (current.getRelativeHeight() + PlayGround.getOneLineHeight());
             for (final Block block : current.getBlocks()) {
-                entities.add(new EntityImpl(
+                entities.add(new OutputEntityImpl(
                         block.getType(),
                         block.getLeftCoordinate(),
                         y,
@@ -81,7 +81,5 @@ public class PlayGround {
         lines = LineMaker.makeStartingLines();
     }
 
-    public void destroyBlock(final Block block) {
-        lines.destroyBlock(block);
-    }
+
 }

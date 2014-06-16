@@ -1,7 +1,7 @@
 package model.entities.doodle;
 
 import data.Publisher;
-import model.EntityType;
+import view.EntityType;
 import model.GameEndedException;
 import model.entities.Movable;
 import model.entities.doodle.move_tackics.MoveTactic;

@@ -13,14 +13,14 @@ public interface Publisher {
 
     public void removeSubscriber(final Subscriber subscriber);
 
-    public void notifySubscribers(final Event event);
+    public void notifySubscribers(Event event);
 
     public static interface Subscriber {
         public void eventHappened(final Event event);
     }
 
     public enum Event {
-        FAIL, MOVED, APPROXED, LINE_PUSHED, LINE_PUSHING, SCORE_CHANGED, UNPAUSED, RESTARTED;
+        FAIL, MOVED, APPROXED, LINE_PUSHED, LINE_PUSHING, SCORE_CHANGED, UNPAUSED, RESTARTED, MISSILE_MOVED;
     }
 
 }

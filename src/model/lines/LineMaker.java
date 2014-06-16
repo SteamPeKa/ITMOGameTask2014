@@ -29,7 +29,7 @@ public class LineMaker {
         final LinesList result = new LinesList();
         final List<Block> blocks = new ArrayList<>();
         for (int w = (typicalBlockWidth / 2); w <= playWidth - (typicalBlockWidth / 2); w += typicalBlockWidth) {
-            blocks.add(new NormalBlock(w));
+            blocks.add(new NormalBlock(w, actualOneLineHeight));
         }
         for (int i = 0; i < actualOneLineHeight; i++) {
             result.addLine(generateEmptyLine(i * PlayGround.getOneLineHeight(), i * PlayGround.getOneLineHeight()));
@@ -51,12 +51,12 @@ public class LineMaker {
         final List<Block> blocks = new ArrayList<>();
         final int x = new Random().nextInt(playWidth);
         if (Math.random() > 0.95) {
-            blocks.add(new BlueGelBlock(x));
+            blocks.add(new BlueGelBlock(x, height));
         } else {
             if (Math.random() > 0.97) {
-                blocks.add(new RocketBlock(x));
+                blocks.add(new RocketBlock(x, height));
             } else {
-                blocks.add(new NormalBlock(x));
+                blocks.add(new NormalBlock(x, height));
             }
         }
         generated++;
@@ -104,7 +104,7 @@ public class LineMaker {
     public static Line generateOneAdditionalLine(final int absHeight, final int height) {
         final List<Block> blocks = new ArrayList<>();
         final int x = new Random().nextInt(playWidth);
-        blocks.add(new AdditionalBlock(x));
+        blocks.add(new AdditionalBlock(x, height));
         generated++;
         return new LineImpl(blocks, absHeight, height);
     }

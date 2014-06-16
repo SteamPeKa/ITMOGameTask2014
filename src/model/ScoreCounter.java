@@ -2,6 +2,7 @@ package model;
 
 import data.Publisher;
 import model.play_field.PlayGround;
+import view.EntityType;
 
 import java.util.*;
 

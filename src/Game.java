@@ -64,6 +64,9 @@ public class Game extends JFrame {
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
                     controller.rightKeyPressed();
                 }
+                if (e.getKeyCode() == KeyEvent.VK_SPACE) {
+                    controller.missileShot();
+                }
             }
 
             @Override
@@ -79,7 +82,7 @@ public class Game extends JFrame {
 
             @Override
             public void focusLost(final FocusEvent e) {
-          //      System.out.println("Фокус потерян");
+                //      System.out.println("Фокус потерян");
                 game.requestFocus(false);
                 game.requestFocus();
 

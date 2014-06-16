@@ -1,7 +1,7 @@
 package model.entities.blocks;
 
 import data.Constants;
-import model.EntityType;
+import view.EntityType;
 import model.ScoreCounter;
 import model.entities.doodle.Doodle;
 import model.entities.doodle.move_tackics.RocketTactic;
@@ -17,13 +17,19 @@ public class RocketBlock implements Block {
     private final int halfWidth;
     private final int centreX;
     private boolean scored = false;
+    private final int y;
 
-    public RocketBlock(final int centreX, final int halfWidth) {
+    private boolean destroyed;
+
+    public RocketBlock(final int centreX, final int halfWidth, final int y) {
         this.halfWidth = halfWidth;
         this.centreX = centreX;
+        this.y = y;
+        destroyed = false;
     }
 
-    public RocketBlock(final int centreX) {
+    public RocketBlock(final int centreX, final int y) {
+        this.y = y;
         this.halfWidth = Constants.typicalBlockWidth / 4;
         this.centreX = centreX;
     }
@@ -50,20 +56,53 @@ public class RocketBlock implements Block {
 
     @Override
     public EntityType getType() {
-        return EntityType.ROCKET_BLOCK;
+        return destroyed ? EntityType.DESTROYED : EntityType.ROCKET_BLOCK;
     }
 
     @Override
     public void collideWithDoodle() {
-        Doodle.getInstance().setMoveTactic(new RocketTactic());
-        if (!scored) {
-            ScoreCounter.getInstance().eventHappened(getType(), ScoreCounter.ModelEvent.COLLISION);
-            scored = true;
+        if (!destroyed) {
+            Doodle.getInstance().setMoveTactic(new RocketTactic());
+            if (!scored) {
+                ScoreCounter.getInstance().eventHappened(getType(), ScoreCounter.ModelEvent.COLLISION);
+                scored = true;
+            }
+            destroyed = true;
         }
     }
 
     @Override
-    public void collideWithMissile() {
-        //Тут ничего не делаем
+    public boolean collideWithMissile() {
+        if (!destroyed) {
+            destroyed = true;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public HitBox getHitBox() {
+        return new HitBox() {
+            @Override
+            public int getX() {
+                return centreX - halfWidth;
+            }
+
+            @Override
+            public int getY() {
+                return y - Constants.actualOneLineHeight;
+            }
+
+            @Override
+            public int getWidth() {
+                return halfWidth * 2;
+            }
+
+            @Override
+            public int getHeight() {
+                return Constants.actualOneLineHeight;
+            }
+        };
     }
 }

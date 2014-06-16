@@ -1,7 +1,7 @@
 package model.entities.blocks;
 
 import data.Constants;
-import model.EntityType;
+import view.EntityType;
 import model.ScoreCounter;
 import model.entities.doodle.Doodle;
 
@@ -18,12 +18,16 @@ public class NormalBlock implements Block {
     private final int halfWidth;
     private boolean scored = false;
 
-    public NormalBlock(final int centreX, final int halfWidth) {
+    private final int y;
+
+    public NormalBlock(final int centreX, final int halfWidth, final int y) {
         this.halfWidth = halfWidth;
         this.centreX = centreX;
+        this.y = y;
     }
 
-    public NormalBlock(final int centreX) {
+    public NormalBlock(final int centreX, final int y) {
+        this.y = y;
         this.halfWidth = Constants.typicalBlockWidth / 2;
         this.centreX = centreX;
     }
@@ -53,7 +57,8 @@ public class NormalBlock implements Block {
     }
 
     @Override
-    public void collideWithMissile() {
+    public boolean collideWithMissile() {
+        return false;
         //Тут ничего не делаем
     }
 
@@ -65,5 +70,30 @@ public class NormalBlock implements Block {
     @Override
     public int getCentreCoordinate() {
         return centreX;
+    }
+
+    @Override
+    public HitBox getHitBox() {
+        return new HitBox() {
+            @Override
+            public int getX() {
+                return centreX - halfWidth;
+            }
+
+            @Override
+            public int getY() {
+                return y - Constants.actualOneLineHeight;
+            }
+
+            @Override
+            public int getWidth() {
+                return halfWidth * 2;
+            }
+
+            @Override
+            public int getHeight() {
+                return Constants.actualOneLineHeight;
+            }
+        };
     }
 }
