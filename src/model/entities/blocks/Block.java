@@ -1,6 +1,6 @@
 package model.entities.blocks;
 
-import model.EntityType;
+import view.EntityType;
 import model.entities.Collidable;
 
 /**

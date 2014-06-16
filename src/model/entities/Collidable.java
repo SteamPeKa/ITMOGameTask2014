@@ -1,4 +1,4 @@
-package  model.entities;
+package model.entities;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,5 +11,19 @@ public interface Collidable {
 
     void collideWithDoodle();
 
-    void collideWithMissile();
+    boolean collideWithMissile();
+
+    HitBox getHitBox();
+
+
+    //В качестве x и y методы выдают нижний левый угол хитбокса
+    public interface HitBox {
+        int getX();
+
+        int getY();
+
+        int getWidth();
+
+        int getHeight();
+    }
 }

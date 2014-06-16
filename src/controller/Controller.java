@@ -47,11 +47,16 @@ public class Controller implements Publisher.Subscriber {
     }
 
     public void leftKeyPressed() {
-        model.leftKeyPressed();
+        if (activityFlag) {
+            model.leftKeyPressed();
+        }
     }
 
     public void rightKeyPressed() {
-        model.rightKeyPressed();
+        if (activityFlag) {
+
+            model.rightKeyPressed();
+        }
     }
 
     public void keyReleased() {
@@ -87,5 +92,12 @@ public class Controller implements Publisher.Subscriber {
         model.restart();
         terminationFlag = false;
         activityFlag = true;
+    }
+
+    public void missileShot() {
+        if (activityFlag) {
+
+            model.missileShot();
+        }
     }
 }

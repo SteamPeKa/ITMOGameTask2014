@@ -3,8 +3,6 @@ package view;
 import controller.Controller;
 import data.Constants;
 import data.Publisher;
-import model.Entity;
-import model.EntityType;
 import model.GameModel;
 import model.ScoreCounter;
 import view.drawing_tactics.*;
@@ -48,7 +46,7 @@ public class View extends JLabel implements Publisher.Subscriber {
         colorMap.put(EntityType.DOODLE_L_F, new DoodleLFTactic());
         colorMap.put(EntityType.DOODLE_R_J, new DoodleRJTactic());
         colorMap.put(EntityType.DOODLE_L_J, new DoodleLJTactic());
-
+        colorMap.put(EntityType.DESTROYED, new DestroyedTactic());
         colorMap.put(EntityType.STANDARD_BLOCK, new StandardBlockTactic());
         colorMap.put(EntityType.BLUE_GEL_BLOCK, new BlueBlockTactic());
         colorMap.put(EntityType.ROCKET_BLOCK, new RocketBlockTactic());
@@ -105,8 +103,8 @@ public class View extends JLabel implements Publisher.Subscriber {
         g.drawImage(backGround, 0, 0, getWidth(), getHeight(), 0, start, backGround.getWidth(null) - 1, start + imageHeight, null);
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        final java.util.List<Entity> entities = model.getAllEntities();
-        for (final Entity entity : entities) {
+        final java.util.List<OutputEntity> entities = model.getAllEntities();
+        for (final OutputEntity entity : entities) {
             final DrawingTactic tactic = colorMap.get(entity.getType()) != null ? colorMap.get(entity.getType()) : new ColoredRectangleTactic(Color.cyan);
             final int drawingX = (int) (entity.getX() * xMult);
             final int drawingY = (int) ((entity.getY()) * yMult);

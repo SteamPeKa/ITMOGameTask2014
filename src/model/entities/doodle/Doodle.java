@@ -1,10 +1,12 @@
 package model.entities.doodle;
 
 import data.Publisher;
-import model.EntityType;
+import view.EntityType;
 import model.GameEndedException;
 import model.entities.Movable;
 import model.entities.doodle.move_tackics.MoveTactic;
+import view.OutputEntity;
+import view.OutputEntityImpl;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -166,6 +168,19 @@ public class Doodle implements Movable, Publisher {
             }
             return lastOrientation.equals(Orientation.LEFT) ? EntityType.DOODLE_L_J : EntityType.DOODLE_R_J;
         }
+    }
+
+    public OutputEntity getEntity() {
+        final int x = coordinates.getX();
+        final int h = coordinates.getH();
+
+
+        return new OutputEntityImpl(
+                getType(),
+                (x - doodleHalfWidth),
+                playHeight - (h + doodleFullHeight),
+                (doodleHalfWidth * 2),
+                doodleFullHeight);
     }
 }
 

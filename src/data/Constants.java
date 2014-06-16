@@ -22,6 +22,10 @@ public class Constants {
     public static final int basicHVelocity = 30;
     public static final int acceleration = (int) (-1 * (Math.pow(basicHVelocity, 2) / (2 * (9.3 * actualOneLineHeight))));
     public static final int BasicXVelocity = (int) (((playWidth * Math.abs(acceleration)) / (2 * basicHVelocity)) * 0.5);
+
+    public static final int missileSpeed = 45;
+    public static final int missileWidth = 10;
+    public static final int missileHeight = 10;
     //
     //Dimensions
     public static final int typicalBlockWidth = playWidth / 5;

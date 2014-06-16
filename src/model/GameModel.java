@@ -2,15 +2,14 @@ package model;
 
 import data.Constants;
 import data.Publisher;
+import model.entities.Missile;
 import model.entities.blocks.Block;
 import model.entities.doodle.Doodle;
 import model.entities.doodle.move_tackics.Standard;
 import model.play_field.PlayGround;
+import view.OutputEntity;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static data.Constants.*;
 
@@ -28,7 +27,11 @@ public class GameModel implements Publisher, Publisher.Subscriber {
     private final Doodle doodle;
     private final ScoreCounter scoreCounter;
 
+    private final List<Missile> missiles;
+
     private final Set<Subscriber> subscribers;
+
+    public int lels = 0;
 
     public GameModel() {
         playGround = PlayGround.getInstance();
@@ -37,6 +40,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         doodle.addSubscriber(this);
         subscribers = new HashSet<>();
         scoreCounter = ScoreCounter.getInstance();
+        missiles = Collections.synchronizedList(new ArrayList<Missile>());
     }
 
     public int getFieldWidth() {
@@ -55,15 +59,13 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         return playGround.getOneLineHeight();
     }
 
-    public List<Entity> getAllEntities() {
-        final List<Entity> entities = new ArrayList<>();
+    public List<OutputEntity> getAllEntities() {
+        final List<OutputEntity> entities = new ArrayList<>();
         entities.addAll(playGround.getBlocksAsEntities());
-        entities.add(new EntityImpl(
-                doodle.getType(),
-                (doodle.getX() - doodle.getHalfOfWidth()),
-                getFieldHeight() - (doodle.getH() + doodle.getFullHeight()),
-                (doodle.getHalfOfWidth() * 2),
-                doodle.getFullHeight()));
+        for (final Missile missile : new ArrayList<>(missiles)) {
+            entities.add(missile.getOut());
+        }
+        entities.add(doodle.getEntity());
 
         //@TODO У этого метода странная архитектура. При добавлении новых сущностей(врагов например или бонусов)
         //@TODO придётся придумать какую-то фогню. Можно это решить храниением всех этих сущностей в отдельном листе
@@ -74,6 +76,16 @@ public class GameModel implements Publisher, Publisher.Subscriber {
     public void move() {
         try {
             doodle.move();
+            for (final Iterator<Missile> missileIterator = new ArrayList<>(missiles).iterator(); missileIterator.hasNext(); ) {
+                final Missile missile = missileIterator.next();
+                for (int i = 0; i < missileSpeed; i++) {
+                    missile.move();
+                    inspectMissile(missile);
+                    notifySubscribers(Event.MOVED);
+                }
+            }
+
+
         } catch (final GameEndedException e) {
             notifySubscribers(Event.FAIL);
         }
@@ -97,21 +109,39 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                 }
             }
         }
+
     }
+
+    private void inspectMissile(final Missile missile) {
+        if (missile.getY() >= playHeight) {
+            missile.destroy();
+            missiles.remove(missile);
+            return;
+        }
+        final List<Block> cur = playGround.getLineByHCoordinate(missile.getY()).getBlocks();
+        for (final Block block : cur) {
+            if (missile.getX() >= block.getLeftCoordinate() && missile.getX() <= block.getRightCoordinate()) {
+                if (block.collideWithMissile()) {
+                    missile.destroy();
+                }
+            }
+        }
+    }
+
 
     private void inspectNewLine() {
         final boolean f = doodle.getH() >= ((double) getFieldHeight() * (5.0 / 9.0));
         if (f) {
             notifySubscribers(Event.LINE_PUSHING);
+            while (doodle.getH() >= ((double) getFieldHeight() * (5.0 / 9.0))) {
+                playGround.pushNewLine();
+                doodle.decHeight(oneLineHeight);
+                for (final Missile missile : missiles) {
+                    missile.decHeight(oneLineHeight);
+                }
+                notifySubscribers(Event.MOVED);
 
-        }
-        while (doodle.getH() >= ((double) getFieldHeight() * (5.0 / 9.0))) {
-            playGround.pushNewLine();
-            doodle.decHeight(oneLineHeight);
-            notifySubscribers(Event.MOVED);
-
-        }
-        if (f) {
+            }
             notifySubscribers(Event.LINE_PUSHED);
             scoreCounter.notifySubscribers(Event.SCORE_CHANGED);
         }
@@ -154,6 +184,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
             inspectCollisions();
         }
 
+
     }
 
     public int getMinHeight() {
@@ -167,5 +198,12 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         doodle.addSubscriber(this);
         scoreCounter.restart();
         notifySubscribers(Event.RESTARTED);
+    }
+
+    public void missileShot() {
+        if (missiles.size() >= 20) {
+            System.out.println(missiles.size());
+        }
+        missiles.add(new Missile(this));
     }
 }

@@ -1,6 +1,9 @@
-package model;
+package view;
 
-public class EntityImpl implements Entity {
+import view.EntityType;
+import view.OutputEntity;
+
+public class OutputEntityImpl implements OutputEntity {
 
         private final EntityType type;
         private final int x;
@@ -8,7 +11,7 @@ public class EntityImpl implements Entity {
         private final int width;
         private final int height;
 
-        public EntityImpl(final EntityType type, final int x, final int y, final int width, final int height) {
+        public OutputEntityImpl(final EntityType type, final int x, final int y, final int width, final int height) {
             this.type = type;
             this.x = x;
             this.y = y;
