@@ -130,10 +130,8 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                 if (doodle.getPrevH() >= hitBox.getY() + hitBox.getHeight()) {
                     if (doodle.getH() > hitBox.getY() && doodle.getH() < hitBox.getY() + hitBox.getHeight()) {
                         final int r1 = Math.abs(hitBox.getX() + hitBox.getWidth() / 2 - doodle.getX());
-                        final int r2 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 - playWidth) - doodle.getX());
-                        final int r3 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 + playWidth) - doodle.getX());
                         final int len = hitBox.getWidth() / 2 + doodle.getHalfOfWidth();
-                        if (r1 < len || r2 < len || r3 < len) {
+                        if (r1 < len) {
                             enemy.destroy();
                             scoreCounter.eventHappened(enemy.getType(), ScoreCounter.ModelEvent.DESTROYED);
                             enemies.remove(enemy);
@@ -146,13 +144,10 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         }
         for (final Enemy enemy : new ArrayList<>(enemies)) {
             final Collidable.HitBox hitBox = enemy.getHitBox();
-            if ((doodle.getH() > hitBox.getY() && doodle.getH() < hitBox.getY() + hitBox.getHeight())
-                    || (doodle.getH() + doodle.getFullHeight() > hitBox.getY() && doodle.getH() + doodle.getFullHeight() < hitBox.getY() + hitBox.getHeight())) {
+            if (Math.abs(doodle.getH() + doodle.getFullHeight() / 2 - (hitBox.getY() + hitBox.getHeight() / 2)) < (doodle.getFullHeight() / 2 + hitBox.getHeight() / 2) * 0.9) {
                 final int r1 = Math.abs(hitBox.getX() + hitBox.getWidth() / 2 - doodle.getX());
-                final int r2 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 - playWidth) - doodle.getX());
-                final int r3 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 + playWidth) - doodle.getX());
-                final int len = hitBox.getWidth() / 2 + doodle.getHalfOfWidth();
-                if (r1 < len || r2 < len || r3 < len) {
+                final int len = (int) ((hitBox.getWidth() / 2 + doodle.getHalfOfWidth()) * 0.9);
+                if (r1 < len) {
                     enemy.collideWithDoodle();
                     ended = true;
                     return;
@@ -214,7 +209,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                     enemy.decH(oneLineHeight);
                 }
                 notifySubscribers(Event.MOVED);
-                if (playGround.getLineByHCoordinate(0).getAbsoluteHeight() % (playHeight * 1) == 0) {
+                if (playGround.getLineByHCoordinate(0).getAbsoluteHeight() % (playHeight * 5) == 0) {
                     enemies.add(new Corovan(this, playHeight + oneLineHeight * 3));
                     // System.out.println("Корован заспаунен (" + enemies.size() + ")");
                 }

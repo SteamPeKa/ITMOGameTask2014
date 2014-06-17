@@ -50,6 +50,8 @@ public class View extends JLabel implements Publisher.Subscriber {
         colorMap.put(EntityType.STANDARD_BLOCK, new StandardBlockTactic());
         colorMap.put(EntityType.BLUE_GEL_BLOCK, new BlueBlockTactic());
         colorMap.put(EntityType.ROCKET_BLOCK, new RocketBlockTactic());
+        colorMap.put(EntityType.COROVAN, new CorovanTactic());
+        colorMap.put(EntityType.MISSILE, new MissileTactic());
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         try {
             backGround = ImageIO.read(new File(

@@ -26,7 +26,7 @@ public class Corovan implements Enemy, Publisher {
     private boolean destroyed;
 
     public Corovan(final Subscriber model, final int initialY) {
-        x = doodleHalfWidth;
+        x = -corovanHalfWidth;
         y = initialY;
         subscribers = new HashSet<>();
         subscribers.add(model);
@@ -108,7 +108,7 @@ public class Corovan implements Enemy, Publisher {
     @Override
     public void move() throws GameEndedException {
         x += corovanSpeed;
-        if (x >= playWidth) {
+        if (x >= playWidth + corovanHalfWidth) {
             destroy();
         }
     }
