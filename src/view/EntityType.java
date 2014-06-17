@@ -10,7 +10,8 @@ package view;
 public enum EntityType {
 
     STANDARD_BLOCK(true), BLUE_GEL_BLOCK(true), ROCKET_BLOCK(true), ADDITIONAL_BLOCK(true),
-    DOODLE_L_F(false), DOODLE_R_F(false), DOODLE_R_J(false), DOODLE_L_J(false), DESTROYED(false), MISSILE(false);
+    DOODLE_L_F(false), DOODLE_R_F(false), DOODLE_R_J(false), DOODLE_L_J(false),
+    DESTROYED(false), MISSILE(false), ENEMY(false);
 
     private final boolean isBlock;
 

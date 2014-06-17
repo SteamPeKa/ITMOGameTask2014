@@ -35,4 +35,9 @@ public class Constants {
     //View
     public static final int backgroundDiv = 50;
     //
+    //Enemies
+    public static final int corovanHalfWidth = 50;
+    public static final int corovanHalfHeight = 25;
+    public static final int corovanSpeed = 5;
+    //
 }
