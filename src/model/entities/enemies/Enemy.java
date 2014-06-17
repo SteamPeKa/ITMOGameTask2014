@@ -3,6 +3,7 @@ package model.entities.enemies;
 import model.entities.Collidable;
 import model.entities.Destroyable;
 import model.entities.Movable;
+import view.EntityType;
 import view.OutputEntity;
 
 /**
@@ -16,4 +17,6 @@ public interface Enemy extends Movable, Destroyable, Collidable {
     public OutputEntity getOut();
 
     public void decH(final int dh);
+
+    public EntityType getType();
 }

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c069de56-e869-4862-b43c-ffb2e8aa29d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/Constants.java" afterPath="$PROJECT_DIR$/src/data/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/enemies/Corovan.java" afterPath="$PROJECT_DIR$/src/model/entities/enemies/Corovan.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/entities/enemies/Enemy.java" afterPath="$PROJECT_DIR$/src/model/entities/enemies/Enemy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/EntityType.java" afterPath="$PROJECT_DIR$/src/view/EntityType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/GameModel.java" afterPath="$PROJECT_DIR$/src/model/GameModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ScoreCounter.java" afterPath="$PROJECT_DIR$/src/model/ScoreCounter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lang.iws" />
@@ -70,13 +72,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameModel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameModel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="0" selection-start="6546" selection-end="6546" vertical-scroll-proportion="-13.444445" vertical-offset="2247" max-vertical-offset="3840">
+            <state line="273" column="9" selection-start="10445" selection-end="10445" vertical-scroll-proportion="0.83002836" vertical-offset="3712" max-vertical-offset="4485">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScoreCounter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ScoreCounter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="54" selection-start="2512" selection-end="2512" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1995">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutputEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/OutputEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="23" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/EntityType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="45" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,11 +128,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Doodle.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
+      <file leaf-file-name="Corovan.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Corovan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="31" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="2445">
-              <folding />
+            <state line="51" column="33" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="2070">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1187#1188#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1776#1777#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1875#1876#0" expanded="true" />
+                <element signature="e#1919#1920#0" expanded="true" />
+                <element signature="e#2299#2300#0" expanded="true" />
+                <element signature="e#2331#2332#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,45 +150,10 @@
       <file leaf-file-name="Enemy.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Enemy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="35" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="20" column="32" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Corovan.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Corovan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="22" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.4674221" vertical-offset="510" max-vertical-offset="1995">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1684#1685#0" expanded="true" />
-                <element signature="e#1728#1729#0" expanded="true" />
-                <element signature="e#1783#1784#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Destroyable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/entities/Destroyable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collidable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/entities/Collidable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="8" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -190,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/view/drow_tacktics/DrowTacktic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/DrawingTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java" />
-        <option value="$PROJECT_DIR$/src/model/ScoreCounter.java" />
         <option value="$PROJECT_DIR$/src/view/ScoreView.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/StandartBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/ImageTacktic.java" />
@@ -231,11 +234,12 @@
         <option value="$PROJECT_DIR$/src/model/entities/blocks/RocketBlock.java" />
         <option value="$PROJECT_DIR$/src/model/entities/Missile.java" />
         <option value="$PROJECT_DIR$/src/model/entities/doodle/Doodle.java" />
-        <option value="$PROJECT_DIR$/src/view/EntityType.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/enemies/Enemy.java" />
         <option value="$PROJECT_DIR$/src/data/Constants.java" />
-        <option value="$PROJECT_DIR$/src/model/GameModel.java" />
+        <option value="$PROJECT_DIR$/src/view/EntityType.java" />
+        <option value="$PROJECT_DIR$/src/model/ScoreCounter.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/enemies/Enemy.java" />
         <option value="$PROJECT_DIR$/src/model/entities/enemies/Corovan.java" />
+        <option value="$PROJECT_DIR$/src/model/GameModel.java" />
       </list>
     </option>
   </component>
@@ -412,6 +416,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lang" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -806,13 +828,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/ScoreCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="26" selection-start="2969" selection-end="2969" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/Publisher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="17" selection-start="147" selection-end="147" vertical-scroll-proportion="0.23767605" vertical-offset="0" max-vertical-offset="568">
@@ -857,7 +872,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="32" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795" />
+        <state line="43" column="32" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/lines/LineImpl.java">
@@ -942,7 +959,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ScoreView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675" />
+        <state line="25" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar:///jdk1.7.0_45/src.zip!/java/awt/event/KeyEvent.java">
@@ -953,13 +972,6 @@
     <entry file="file://$PROJECT_DIR$/src/view/OutputEntityImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="51" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/OutputEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
@@ -1044,26 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/EntityType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/entities/doodle/Doodle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="180" column="31" selection-start="4330" selection-end="4330" vertical-scroll-proportion="0.0" vertical-offset="1832" max-vertical-offset="2445">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1109,9 +1105,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
+    <entry file="file://$PROJECT_DIR$/src/view/OutputEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="6546" selection-end="6546" vertical-scroll-proportion="-13.444445" vertical-offset="2247" max-vertical-offset="3840">
+        <state line="15" column="23" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/EntityType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="32" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1120,15 +1130,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Corovan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="22" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.4674221" vertical-offset="510" max-vertical-offset="1995">
+        <state line="51" column="33" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2070">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1728#1729#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1776#1777#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#2331#2332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ScoreCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="54" selection-start="2512" selection-end="2512" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="9" selection-start="10445" selection-end="10445" vertical-scroll-proportion="0.83002836" vertical-offset="3712" max-vertical-offset="4485">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

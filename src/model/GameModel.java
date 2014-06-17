@@ -1,6 +1,5 @@
 package model;
 
-import data.Constants;
 import data.Publisher;
 import model.entities.Collidable;
 import model.entities.Missile;
@@ -36,7 +35,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
 
     private final Set<Subscriber> subscribers;
 
-    public int lels = 0;
+    public boolean ended = false;
 
     public GameModel() {
         playGround = PlayGround.getInstance();
@@ -118,12 +117,45 @@ public class GameModel implements Publisher, Publisher.Subscriber {
             if (doodle.getPrevH() >= playGround.getLineByHCoordinate(doodle.getH()).getRelativeHeight() + PlayGround.getOneLineHeight()) {
                 for (final Block block : currentLine) {
                     final int r1 = Math.abs(block.getCentreCoordinate() - doodle.getX());
-                    final int r2 = Math.abs((block.getCentreCoordinate() - Constants.playWidth) - doodle.getX());
-                    final int r3 = Math.abs((block.getCentreCoordinate() + Constants.playWidth) - doodle.getX());
+                    final int r2 = Math.abs((block.getCentreCoordinate() - playWidth) - doodle.getX());
+                    final int r3 = Math.abs((block.getCentreCoordinate() + playWidth) - doodle.getX());
                     final int len = (block.getHalfWidth() + doodle.getHalfOfWidth());
                     if (r1 < len || r2 < len || r3 < len) {
                         block.collideWithDoodle();
                     }
+                }
+            }
+            for (final Enemy enemy : new ArrayList<>(enemies)) {
+                final Collidable.HitBox hitBox = enemy.getHitBox();
+                if (doodle.getPrevH() >= hitBox.getY() + hitBox.getHeight()) {
+                    if (doodle.getH() > hitBox.getY() && doodle.getH() < hitBox.getY() + hitBox.getHeight()) {
+                        final int r1 = Math.abs(hitBox.getX() + hitBox.getWidth() / 2 - doodle.getX());
+                        final int r2 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 - playWidth) - doodle.getX());
+                        final int r3 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 + playWidth) - doodle.getX());
+                        final int len = hitBox.getWidth() / 2 + doodle.getHalfOfWidth();
+                        if (r1 < len || r2 < len || r3 < len) {
+                            enemy.destroy();
+                            scoreCounter.eventHappened(enemy.getType(), ScoreCounter.ModelEvent.DESTROYED);
+                            enemies.remove(enemy);
+                            doodle.getMoveTactic().setHVelocity(basicHVelocity);
+                            System.out.println("Корован уничтожен прыжком");
+                        }
+                    }
+                }
+            }
+        }
+        for (final Enemy enemy : new ArrayList<>(enemies)) {
+            final Collidable.HitBox hitBox = enemy.getHitBox();
+            if ((doodle.getH() > hitBox.getY() && doodle.getH() < hitBox.getY() + hitBox.getHeight())
+                    || (doodle.getH() + doodle.getFullHeight() > hitBox.getY() && doodle.getH() + doodle.getFullHeight() < hitBox.getY() + hitBox.getHeight())) {
+                final int r1 = Math.abs(hitBox.getX() + hitBox.getWidth() / 2 - doodle.getX());
+                final int r2 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 - playWidth) - doodle.getX());
+                final int r3 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2 + playWidth) - doodle.getX());
+                final int len = hitBox.getWidth() / 2 + doodle.getHalfOfWidth();
+                if (r1 < len || r2 < len || r3 < len) {
+                    enemy.collideWithDoodle();
+                    ended = true;
+                    return;
                 }
             }
         }
@@ -156,6 +188,8 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                         missile.destroy();
                         //   System.out.println("Корован уничтожен");
                         enemies.remove(e);
+                        scoreCounter.eventHappened(e.getType(), ScoreCounter.ModelEvent.DESTROYED);
+
                         missiles.remove(missile);
                         return;
                     }
@@ -180,7 +214,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                     enemy.decH(oneLineHeight);
                 }
                 notifySubscribers(Event.MOVED);
-                if (playGround.getLineByHCoordinate(0).getAbsoluteHeight() % (playHeight * 5) == 0) {
+                if (playGround.getLineByHCoordinate(0).getAbsoluteHeight() % (playHeight * 1) == 0) {
                     enemies.add(new Corovan(this, playHeight + oneLineHeight * 3));
                     // System.out.println("Корован заспаунен (" + enemies.size() + ")");
                 }
@@ -227,11 +261,17 @@ public class GameModel implements Publisher, Publisher.Subscriber {
 
     @Override
     public void eventHappened(final Event event) {
-        if (event == Event.MOVED) {
-            inspectCollisions();
+        if (!ended) {
+            if (event == Event.MOVED) {
+                inspectCollisions();
+                return;
+            }
+            if (event == Event.FAIL) {
+                notifySubscribers(Event.FAIL);
+                ended = true;
+            }
+
         }
-
-
     }
 
     public int getMinHeight() {
@@ -244,7 +284,10 @@ public class GameModel implements Publisher, Publisher.Subscriber {
         doodle.setMoveTactic(new Standard());
         doodle.addSubscriber(this);
         scoreCounter.restart();
+        enemies.clear();
+        missiles.clear();
         notifySubscribers(Event.RESTARTED);
+        ended = false;
     }
 
     public void missileShot() {

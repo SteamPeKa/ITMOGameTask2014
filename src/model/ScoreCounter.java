@@ -63,6 +63,15 @@ public class ScoreCounter implements Publisher {
         if (cause == null && event == ModelEvent.LINE_ADDED) {
             notifySubscribers(Event.SCORE_CHANGED);
         }
+        if (cause == EntityType.COROVAN && event == ModelEvent.DESTROYED) {
+            if (!scoreInfo.containsKey("Номадов побеждено: ")) {
+                scoreInfo.put("Номадов побеждено: ", 1);
+            } else {
+                scoreInfo.put("Номадов побеждено: ", scoreInfo.get("Номадов побеждено: ") + 1);
+            }
+            notifySubscribers(Event.SCORE_CHANGED);
+            return;
+        }
 
     }
 
@@ -93,7 +102,7 @@ public class ScoreCounter implements Publisher {
     }
 
     public enum ModelEvent {
-        COLLISION, LINE_ADDED;
+        COLLISION, LINE_ADDED, DESTROYED;
     }
 
     public class ScoreInfo implements Iterable<String> {

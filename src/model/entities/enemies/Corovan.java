@@ -36,7 +36,7 @@ public class Corovan implements Enemy, Publisher {
 
     @Override
     public OutputEntity getOut() {
-        return new OutputEntityImpl(destroyed ? EntityType.DESTROYED : EntityType.ENEMY, x - corovanHalfWidth, playHeight - (y - corovanHalfHeight), corovanHalfWidth * 2, corovanHalfHeight * 2);
+        return new OutputEntityImpl(destroyed ? EntityType.DESTROYED : EntityType.COROVAN, x - corovanHalfWidth, playHeight - (y + corovanHalfHeight), corovanHalfWidth * 2, corovanHalfHeight * 2);
     }
 
     @Override
@@ -45,6 +45,11 @@ public class Corovan implements Enemy, Publisher {
         if (y <= 0) {
             destroy();
         }
+    }
+
+    @Override
+    public EntityType getType() {
+        return EntityType.COROVAN;
     }
 
     @Override
