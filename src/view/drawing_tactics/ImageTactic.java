@@ -3,7 +3,6 @@ package view.drawing_tactics;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
-import java.io.IOException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,7 +21,7 @@ public abstract class ImageTactic implements DrawingTactic {
             image1 = ImageIO.read(new File(imagePath));
             //image1 = ImageIO.read(getClass().getResource(imagePath));
 
-        } catch (final IOException e) {
+        } catch (final Exception e) {
             e.printStackTrace();
             image1 = null;
         }

@@ -37,6 +37,12 @@ public class Game extends JFrame {
         game.setVisible(true);
 
         final View view = new View(controller, model);
+        final JLabel viewWrapper = new JLabel();
+        viewWrapper.setLayout(new GridLayout(1, 1));
+        viewWrapper.add(view);
+        view.setVisible(true);
+        viewWrapper.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
+        viewWrapper.setVisible(true);
         final ScoreView view2 = new ScoreView(model);
         final ControllingView view3 = new ControllingView(controller);
         model.addSubscriber(view3);
@@ -48,7 +54,7 @@ public class Game extends JFrame {
         additional.add(view3); //Пока что это не работает вообще. Очень странная штука творится.
         view.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
         view2.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
-        game.add(view);
+        game.add(viewWrapper);
         game.add(additional);
         game.addKeyListener(new KeyListener() {
             @Override

@@ -60,7 +60,6 @@ public class View extends JLabel implements Publisher.Subscriber {
             e.printStackTrace();
             System.exit(-1);
         }
-        this.setBorder(BorderFactory.createLineBorder(Color.black));
         addComponentListener(new ComponentListener() {
             @Override
             public void componentResized(final ComponentEvent e) {

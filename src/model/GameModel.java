@@ -180,8 +180,8 @@ public class GameModel implements Publisher, Publisher.Subscriber {
             final Enemy e = enemyIterator.next();
             final Collidable.HitBox enemyHitBox = e.getHitBox();
 
-            if (enemyHitBox.getY() <= missile.getY() && enemyHitBox.getY() + enemyHitBox.getHeight() >= missile.getY()) {
-                if (enemyHitBox.getX() <= missile.getX() && enemyHitBox.getX() + enemyHitBox.getWidth() >= missile.getX()) {
+            if (enemyHitBox.getY() < missile.getY() && enemyHitBox.getY() + enemyHitBox.getHeight() > missile.getY()) {
+                if (enemyHitBox.getX() < missile.getX() && enemyHitBox.getX() + enemyHitBox.getWidth() > missile.getX()) {
                     if (e.collideWithMissile()) {
                         missile.destroy();
                         //   System.out.println("Корован уничтожен");
