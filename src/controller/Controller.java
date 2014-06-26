@@ -22,6 +22,8 @@ public class Controller implements Publisher.Subscriber {
 
     private boolean terminationFlag = false;
 
+    private final Object lock = new Object();
+
     public Controller(final GameModel model) {
         this.model = model;
         model.addSubscriber(this);
@@ -42,6 +44,13 @@ public class Controller implements Publisher.Subscriber {
                     e.printStackTrace();
                 }
                 model.move();
+            }
+            synchronized (lock) {
+                try {
+                    lock.wait();
+                } catch (final InterruptedException e) {
+                    //Проигнорируем это исключение, потому как если оно выполнится мы вернёмся в wait посредством while !terminated
+                }
             }
         }
     }
@@ -82,9 +91,14 @@ public class Controller implements Publisher.Subscriber {
     public void unpause() {
         if (!terminationFlag) {
             activityFlag = true;
+            synchronized (lock) {
+                lock.notifyAll();
+            }
         } else {
             view.eventHappened(Publisher.Event.FAIL);
-            notifyAll();
+            synchronized (lock) {
+                lock.notifyAll();
+            }
         }
     }
 
@@ -92,6 +106,9 @@ public class Controller implements Publisher.Subscriber {
         model.restart();
         terminationFlag = false;
         activityFlag = true;
+        synchronized (lock) {
+            lock.notifyAll();
+        }
     }
 
     public void missileShot() {

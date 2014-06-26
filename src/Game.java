@@ -77,12 +77,13 @@ public class Game extends JFrame {
         game.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(final FocusEvent e) {
-
+                controller.unpause();
             }
 
             @Override
             public void focusLost(final FocusEvent e) {
-                //      System.out.println("Фокус потерян");
+                System.out.println("Фокус потерян");
+                controller.pause();
                 game.requestFocus(false);
                 game.requestFocus();
 
