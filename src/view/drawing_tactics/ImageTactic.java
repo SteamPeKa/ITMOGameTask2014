@@ -2,7 +2,6 @@ package view.drawing_tactics;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,10 +17,10 @@ public abstract class ImageTactic implements DrawingTactic {
     protected ImageTactic(final String imagePath, final Color rescueColor) {
         Image image1;
         try {
-            image1 = ImageIO.read(new File(imagePath));
+            //image1 = ImageIO.read(new File(imagePath));
             //image1 = ImageIO.read(getClass().getResource(imagePath));
-            // image1 = ImageIO.read(System.class.getResource(imagePath));
-
+            //image1 = ImageIO.read(System.class.getResource(imagePath));
+             image1 = ImageIO.read(getClass().getClassLoader().getResource(imagePath));
         } catch (final Exception e) {
             e.printStackTrace();
             image1 = null;

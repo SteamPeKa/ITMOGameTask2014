@@ -12,7 +12,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
-import java.io.File;
 import java.io.IOException;
 import java.util.EnumMap;
 import java.util.Map;
@@ -54,8 +53,7 @@ public class View extends JLabel implements Publisher.Subscriber {
         colorMap.put(EntityType.MISSILE, new MissileTactic());
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         try {
-            backGround = ImageIO.read(new File(
-                    "res/hhh.png"));
+            backGround = ImageIO.read(getClass().getClassLoader().getResource("res/hhh.png"));
         } catch (final IOException e) {
             e.printStackTrace();
             backGround = null;

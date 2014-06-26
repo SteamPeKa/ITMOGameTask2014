@@ -2,8 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c069de56-e869-4862-b43c-ffb2e8aa29d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/jumpRight.png" afterPath="$PROJECT_DIR$/res/jumpRight.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/staticRight.png" afterPath="$PROJECT_DIR$/res/staticRight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/Sand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/blocks_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/corovan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/hhh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/jumpLeft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/jumpRight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/missile.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/pear.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/standard-button-off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/standard-button-on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/standard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/staticLeft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/res/staticRight.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/Sand.png" afterPath="$PROJECT_DIR$/out/production/lang/res/Sand.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/blocks_5.png" afterPath="$PROJECT_DIR$/out/production/lang/res/blocks_5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/blue.png" afterPath="$PROJECT_DIR$/out/production/lang/res/blue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/corovan.png" afterPath="$PROJECT_DIR$/out/production/lang/res/corovan.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/hhh.png" afterPath="$PROJECT_DIR$/out/production/lang/res/hhh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/jumpLeft.png" afterPath="$PROJECT_DIR$/out/production/lang/res/jumpLeft.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/jumpRight.png" afterPath="$PROJECT_DIR$/out/production/lang/res/jumpRight.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/missile.png" afterPath="$PROJECT_DIR$/out/production/lang/res/missile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/pear.png" afterPath="$PROJECT_DIR$/out/production/lang/res/pear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/standard-button-off.png" afterPath="$PROJECT_DIR$/out/production/lang/res/standard-button-off.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/standard-button-on.png" afterPath="$PROJECT_DIR$/out/production/lang/res/standard-button-on.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/standard.png" afterPath="$PROJECT_DIR$/out/production/lang/res/standard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/staticLeft.png" afterPath="$PROJECT_DIR$/out/production/lang/res/staticLeft.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/staticRight.png" afterPath="$PROJECT_DIR$/out/production/lang/res/staticRight.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java" afterPath="$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java" afterPath="$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/View.java" afterPath="$PROJECT_DIR$/src/view/View.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -70,19 +98,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
+      <file leaf-file-name="ImageTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="45" selection-start="7688" selection-end="7688" vertical-scroll-proportion="0.0" vertical-offset="2805" max-vertical-offset="4545">
+            <state line="23" column="89" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Corovan.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Corovan.java">
+      <file leaf-file-name="DoodleRFTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="39" selection-start="2840" selection-end="2840" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2385">
+            <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CorovanTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="86" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -91,64 +128,57 @@
       <file leaf-file-name="StandardBlockTactic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="330">
+            <state line="13" column="15" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game.java">
+      <file leaf-file-name="DoodleRJTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="16" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1575">
+            <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="795">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DoodleLFTactic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLFTactic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="36" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1980">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="missile.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/missile.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="jumpRight.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/jumpRight.png">
+        <entry file="file://$PROJECT_DIR$/src/res/jumpRight.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="staticRight.png" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/staticRight.png">
+      <file leaf-file-name="BlueBlockTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/BlueBlockTactic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="19" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColoredRectangleTactic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="32" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="24" selection-start="1795" selection-end="1795" vertical-scroll-proportion="1.3018868" vertical-offset="270" max-vertical-offset="1965">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staticRight.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/res/staticRight.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -202,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/view/EntityType.java" />
         <option value="$PROJECT_DIR$/src/model/ScoreCounter.java" />
         <option value="$PROJECT_DIR$/src/model/entities/enemies/Enemy.java" />
-        <option value="$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/view/ControllingView.java" />
         <option value="$PROJECT_DIR$/src/model/entities/enemies/Corovan.java" />
@@ -214,9 +243,10 @@
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/MissileTactic.java" />
         <option value="$PROJECT_DIR$/src/view/drawing_tactics/RocketBlockTactic.java" />
         <option value="$PROJECT_DIR$/src/model/GameModel.java" />
-        <option value="$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java" />
-        <option value="$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java" />
+        <option value="$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java" />
+        <option value="$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java" />
         <option value="$PROJECT_DIR$/src/view/View.java" />
       </list>
     </option>
@@ -327,288 +357,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawing_tactics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play_field" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lines" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="enemies" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doodle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doodle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="move_tackics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -640,6 +388,7 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -817,7 +566,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -835,8 +584,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27798933" sideWeight="0.6706282" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4700162" sideWeight="0.49961802" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27798933" sideWeight="0.6706282" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4700162" sideWeight="0.49961802" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1047,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="32" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DestroyedTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="9" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1068,30 +810,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/BlueBlockTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLJTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
@@ -1106,13 +827,6 @@
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/RocketBlockTactic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="19" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
@@ -1140,21 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLFTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="765">
+        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
@@ -1166,26 +866,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/View.java">
+    <entry file="file://$PROJECT_DIR$/src/res/missile.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/res/jumpRight.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/res/staticRight.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ColoredRectangleTactic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="36" selection-start="2017" selection-end="2017" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1980">
+        <state line="43" column="32" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/missile.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRJTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/jumpRight.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/BlueBlockTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="53" max-vertical-offset="330">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/staticRight.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleRFTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="89" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="86" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="77" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="24" selection-start="1795" selection-end="1795" vertical-scroll-proportion="1.3018868" vertical-offset="270" max-vertical-offset="1965">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

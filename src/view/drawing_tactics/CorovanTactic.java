@@ -2,7 +2,6 @@ package view.drawing_tactics;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 
 /**
@@ -21,7 +20,7 @@ public class CorovanTactic implements DrawingTactic {
         final Color rescueColor = Color.MAGENTA;
         Image image1;
         try {
-            image1 = ImageIO.read(new File(imagePath));
+            image1 = ImageIO.read(getClass().getClassLoader().getResource(imagePath));
         } catch (final IOException e) {
             e.printStackTrace();
             image1 = null;
