@@ -117,4 +117,8 @@ public class Controller implements Publisher.Subscriber {
             model.missileShot();
         }
     }
+
+    public boolean isActive() {
+        return activityFlag;
+    }
 }
