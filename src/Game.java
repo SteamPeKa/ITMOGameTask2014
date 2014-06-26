@@ -102,9 +102,6 @@ public class Game extends JFrame {
                 } else {
                     //System.out.println("Контроллер говорит, что модель НЕ активна");
                 }
-                game.requestFocus(false);
-                game.requestFocus();
-
             }
         });
         controller.start();
