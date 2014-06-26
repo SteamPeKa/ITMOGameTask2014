@@ -58,7 +58,8 @@ public class View extends JLabel implements Publisher.Subscriber {
                     "res/hhh.png"));
         } catch (final IOException e) {
             e.printStackTrace();
-            System.exit(-1);
+            backGround = null;
+            System.out.println("Игра запустится без фонового изображения");
         }
         addComponentListener(new ComponentListener() {
             @Override
@@ -93,15 +94,10 @@ public class View extends JLabel implements Publisher.Subscriber {
     @Override
     public void paint(final Graphics g) {
         super.paint(g);
-        int imageHeight = (((backGround.getWidth(null)) / getWidth()) + 1) * getHeight();
-        if (imageHeight == 0) {
-            imageHeight = getHeight();
+        if (backGround != null) {
+            makeBackground(g);
         }
-        int start = ((backGround.getHeight(null) - imageHeight) - (model.getMinHeight() / Constants.backgroundDiv));
-        if (start <= 0) {
-            start = 0;
-        }
-        g.drawImage(backGround, 0, 0, getWidth(), getHeight(), 0, start, backGround.getWidth(null) - 1, start + imageHeight, null);
+
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         final java.util.List<OutputEntity> entities = model.getAllEntities();
@@ -113,6 +109,18 @@ public class View extends JLabel implements Publisher.Subscriber {
             final int drawingH = (int) (entity.getHeight() * yMult);
             tactic.drawIt(g2d, drawingX, drawingY, drawingW, drawingH, getWidth(), getHeight());
         }
+    }
+
+    private void makeBackground(final Graphics g) {
+        int imageHeight = (((backGround.getWidth(null)) / getWidth()) + 1) * getHeight();
+        if (imageHeight == 0) {
+            imageHeight = getHeight();
+        }
+        int start = ((backGround.getHeight(null) - imageHeight) - (model.getMinHeight() / Constants.backgroundDiv));
+        if (start <= 0) {
+            start = 0;
+        }
+        g.drawImage(backGround, 0, 0, getWidth(), getHeight(), 0, start, backGround.getWidth(null) - 1, start + imageHeight, null);
     }
 
 
