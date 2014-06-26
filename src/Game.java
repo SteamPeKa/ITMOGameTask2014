@@ -52,8 +52,9 @@ public class Game extends JFrame {
         additional.setLayout(new GridLayout(2, 1));
         additional.add(view2);
         additional.add(view3); //Пока что это не работает вообще. Очень странная штука творится.
-        view.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
-        view2.setBorder(BorderFactory.createLineBorder(Color.BLACK, 10));
+        view2.setBorder(BorderFactory.createTitledBorder("Счёт"));
+        view3.setBorder(BorderFactory.createEmptyBorder(7, 7, 7, 7));
+        //additional.setBorder(BorderFactory.createLineBorder(Color.BLACK, 5));
         game.add(viewWrapper);
         game.add(additional);
         game.addKeyListener(new KeyListener() {

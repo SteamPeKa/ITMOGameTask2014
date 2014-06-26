@@ -20,6 +20,7 @@ public abstract class ImageTactic implements DrawingTactic {
         try {
             image1 = ImageIO.read(new File(imagePath));
             //image1 = ImageIO.read(getClass().getResource(imagePath));
+            // image1 = ImageIO.read(System.class.getResource(imagePath));
 
         } catch (final Exception e) {
             e.printStackTrace();
