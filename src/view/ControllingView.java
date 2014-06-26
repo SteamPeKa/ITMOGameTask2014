@@ -23,6 +23,7 @@ public class ControllingView extends JLabel implements Publisher.Subscriber {
 
 
     private final Controller controller;
+    private State state = State.PAUSE;
 
 
     public ControllingView(final Controller controlleR) {
@@ -34,7 +35,6 @@ public class ControllingView extends JLabel implements Publisher.Subscriber {
         this.add(pauseButton);
         pauseButton.addActionListener(new ActionListener() {
 
-            private State state = State.PAUSE;
 
             @Override
             public void actionPerformed(final ActionEvent e) {
@@ -71,12 +71,22 @@ public class ControllingView extends JLabel implements Publisher.Subscriber {
         if (event == Publisher.Event.RESTARTED) {
             restartButton.setEnabled(false);
             pauseButton.setEnabled(true);
+            state = State.PAUSE;
+            pauseButton.setText("Поставить на паузу");
         }
     }
 
 
     private enum State {
         PAUSE, UNPAUSE
+    }
+
+    public void pauseWithNoClick() {
+        if (state == State.PAUSE) {
+            state = State.UNPAUSE;
+            controller.pause();
+            pauseButton.setText("Снять с паузы");
+        }
     }
 
 }

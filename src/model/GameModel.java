@@ -136,7 +136,7 @@ public class GameModel implements Publisher, Publisher.Subscriber {
                             scoreCounter.eventHappened(enemy.getType(), ScoreCounter.ModelEvent.DESTROYED);
                             enemies.remove(enemy);
                             doodle.getMoveTactic().setHVelocity(basicHVelocity);
-                            System.out.println("Корован уничтожен прыжком");
+                            //   System.out.println("Корован уничтожен прыжком");
                         }
                     }
                 }
@@ -146,8 +146,11 @@ public class GameModel implements Publisher, Publisher.Subscriber {
             final Collidable.HitBox hitBox = enemy.getHitBox();
             if (Math.abs(doodle.getH() + doodle.getFullHeight() / 2 - (hitBox.getY() + hitBox.getHeight() / 2)) < (doodle.getFullHeight() / 2 + hitBox.getHeight() / 2) * 0.9) {
                 final int r1 = Math.abs(hitBox.getX() + hitBox.getWidth() / 2 - doodle.getX());
+                final int r2 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2) - playWidth - doodle.getX());
+                final int r3 = Math.abs((hitBox.getX() + hitBox.getWidth() / 2) + playWidth - doodle.getX());
+
                 final int len = (int) ((hitBox.getWidth() / 2 + doodle.getHalfOfWidth()) * 0.9);
-                if (r1 < len) {
+                if (r1 < len || r2 < len || r3 < len) {
                     enemy.collideWithDoodle();
                     ended = true;
                     return;

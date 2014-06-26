@@ -79,11 +79,10 @@ public class Game extends JFrame {
             public void focusGained(final FocusEvent e) {
                 if (controller.isActive()) {
                     //   System.out.println("Контроллер говорит, что модель активна");
-                    controller.unpause();
 
                 } else {
                     // System.out.println("Контроллер говорит, что модель НЕ активна");
-
+                    view3.pauseWithNoClick();
                 }
             }
 
