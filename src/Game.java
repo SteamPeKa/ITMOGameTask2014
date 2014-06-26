@@ -77,13 +77,25 @@ public class Game extends JFrame {
         game.addFocusListener(new FocusListener() {
             @Override
             public void focusGained(final FocusEvent e) {
-                // controller.unpause();
+                if (controller.isActive()) {
+                    //   System.out.println("Контроллер говорит, что модель активна");
+                    controller.unpause();
+
+                } else {
+                    // System.out.println("Контроллер говорит, что модель НЕ активна");
+
+                }
             }
 
             @Override
             public void focusLost(final FocusEvent e) {
-                System.out.println("Фокус потерян");
-                //controller.pause();
+                // System.out.println("Фокус потерян");
+                if (controller.isActive()) {
+                    // System.out.println("Контроллер говорит, что модель активна");
+                    controller.pause();
+                } else {
+                    //System.out.println("Контроллер говорит, что модель НЕ активна");
+                }
                 game.requestFocus(false);
                 game.requestFocus();
 

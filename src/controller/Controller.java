@@ -18,7 +18,7 @@ public class Controller implements Publisher.Subscriber {
 
     private View view;
 
-    private boolean activityFlag = true;
+    private volatile boolean activityFlag = true;
 
     private boolean terminationFlag = false;
 
