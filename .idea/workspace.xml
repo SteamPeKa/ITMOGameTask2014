@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c069de56-e869-4862-b43c-ffb2e8aa29d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lang.iws" />
@@ -71,7 +70,7 @@
       <file leaf-file-name="GameModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/GameModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="45" selection-start="7688" selection-end="7688" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="4260">
+            <state line="187" column="45" selection-start="7688" selection-end="7688" vertical-scroll-proportion="0.0" vertical-offset="2805" max-vertical-offset="4545">
               <folding />
             </state>
           </provider>
@@ -80,7 +79,7 @@
       <file leaf-file-name="Corovan.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/entities/enemies/Corovan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="39" selection-start="2840" selection-end="2840" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2190">
+            <state line="113" column="39" selection-start="2840" selection-end="2840" vertical-scroll-proportion="0.0" vertical-offset="1695" max-vertical-offset="2385">
               <folding />
             </state>
           </provider>
@@ -98,7 +97,7 @@
       <file leaf-file-name="StandardBlockTactic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/StandardBlockTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="13" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -107,7 +106,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="16" selection-start="3678" selection-end="3678" vertical-scroll-proportion="1.400722" vertical-offset="1007" max-vertical-offset="1575">
+            <state line="104" column="16" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.72359157" vertical-offset="984" max-vertical-offset="1575">
               <folding />
             </state>
           </provider>
@@ -116,7 +115,7 @@
       <file leaf-file-name="CorovanTactic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/CorovanTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="675">
+            <state line="18" column="10" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -125,7 +124,7 @@
       <file leaf-file-name="ScoreView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ScoreView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="675">
+            <state line="25" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -134,7 +133,7 @@
       <file leaf-file-name="ImageTactic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/ImageTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="765">
+            <state line="20" column="40" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -143,7 +142,7 @@
       <file leaf-file-name="DoodleLFTactic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/drawing_tactics/DoodleLFTactic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="13" column="19" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -152,7 +151,7 @@
       <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="6" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="1860">
+            <state line="54" column="6" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2085">
               <folding />
             </state>
           </provider>
@@ -297,8 +296,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -690,19 +689,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -728,6 +714,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -807,7 +806,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -825,8 +824,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27798933" sideWeight="0.6706282" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47163695" sideWeight="0.49961802" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27798933" sideWeight="0.6706282" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4700162" sideWeight="0.49961802" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1183,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="16" selection-start="3678" selection-end="3678" vertical-scroll-proportion="1.400722" vertical-offset="1007" max-vertical-offset="1575">
+        <state line="104" column="16" selection-start="3678" selection-end="3678" vertical-scroll-proportion="0.72359157" vertical-offset="984" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
