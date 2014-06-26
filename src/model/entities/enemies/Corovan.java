@@ -70,27 +70,48 @@ public class Corovan implements Enemy, Publisher {
     @Override
     public HitBox getHitBox() {
         return new HitBox() {
-            private final int currX = x - corovanHalfWidth;
-            private final int currY = y - corovanHalfHeight;
+            private final int leftX = x - corovanHalfWidth;
+            private final int rightX = x + corovanHalfWidth;
+            private final int bottomY = y - corovanHalfHeight;
+            private final int topY = y + corovanHalfHeight;
 
             @Override
             public int getX() {
-                return currX;
+                if (leftX < 0) {
+                    return 0;
+                }
+                if (leftX > playWidth) {
+                    return playWidth;
+                }
+                return leftX;
             }
 
             @Override
             public int getY() {
-                return currY;
+                if (bottomY < 0) {
+                    return 0;
+                }
+                if (bottomY > playHeight) {
+                    return playHeight;
+                }
+                return bottomY;
+
             }
 
             @Override
             public int getWidth() {
-                return 2 * corovanHalfWidth;
+                if (rightX - getX() < 0) {
+                    throw new InternalError();
+                }
+                return (rightX - getX());
             }
 
             @Override
             public int getHeight() {
-                return 2 * corovanHalfHeight;
+                if (topY - getY() <= 0) {
+                    throw new InternalError();
+                }
+                return (topY - getY());
             }
         };
     }
